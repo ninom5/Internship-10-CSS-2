@@ -1,86 +1,143 @@
-@font-face{
-    font-family: 'PP Neue Montreal Mono';
-    src: url('./assets/fonts/ppneuemontreal-medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
+@font-face {
+  font-family: "PP Neue Montreal Mono";
+  src: url("./assets/fonts/ppneuemontreal-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #F5EDE1;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  background-color: #f5ede1;
 }
 
-header{
-    width: 100%;
-    height: 100%;
+header {
+  width: 100%;
+  height: 100%;
 }
-.hero{
-    position: relative;
-    background-image: url('./assets/images/Hero\ background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 100px);
-    height: calc(100vh - 100px);
-    margin: 50px;
-    align-items: center;
-    justify-content: flex-start;
+.hero {
+  position: relative;
+  background-image: url("./assets/images/Hero\ background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 100px);
+  height: calc(100vh - 100px);
+  margin: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
 }
- 
-.hero-navigation{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+
+.hero-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
-.hero-navigation p{
-    font-size: 1rem;
-    line-height: 16px;
-    font-family: 'PP Neue Montreal Mono', sans-serif;
-    text-align: center;
+.hero-navigation p {
+  font-size: 1rem;
+  line-height: 16px;
+  font-family: "PP Neue Montreal Mono", sans-serif;
+  text-align: center;
 }
-.hero-navigation p:first-child{
-    padding-left: 30px;
-    text-align: left;
+.hero-navigation p:first-child {
+  padding-left: 30px;
+  text-align: left;
 }
-.hero-navigation-button{
-    /* width: 10rem;
+.hero-navigation-button {
+  /* width: 10rem;
     height: 2.7rem; */
-    padding: 1rem 1.1rem;
-    font-family: 'PP Neue Montreal Mono', sans-serif;
-    font-size: 1rem;
-    color: #121212;
-    margin-right: 30px;
-    border: none;
+  padding: 1rem 1.1rem;
+  font-family: "PP Neue Montreal Mono", sans-serif;
+  font-size: 1rem;
+  color: #121212;
+  margin-right: 30px;
+  border: none;
 }
 
-
-.hero-menu{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    justify-content: space-between;
-    width: 95%;
-    align-items: center;
-    padding: 1.8rem;
+.hero-scrolling {
+  display: flex;
+  width: 100%;
+  animation: _scroll 30s linear infinite;
+  margin: auto 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-.hero-menu li a{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'PP Neue Montreal Mono', sans-serif;
-    font-size: 1rem;
-    line-height: 1.1rem;
+
+.hero-scrolling div {
+  display: flex;
+  width: 500px;
+  height: 620px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 420px;
+}
+.hero-scrolling div p {
+  font-family: "PP Neue Montreal Mono", sans-serif;
+  font-size: 7.5rem;
+  line-height: 9rem;
+  color: #eaeaea;
+}
+.hero-scrolling div img {
+  margin: 0 auto;
+}
+
+.digitalac {
+  background-image: url("/assets/images/Digitalac.png");
+}
+.markentigas {
+  background-image: url("/assets/images/Marketingaš.png");
+}
+.programer {
+  margin-left: 70px;
+  background-image: url("/assets/images/Programer.png");
+}
+.dizajner {
+  background-image: url("/assets/images/Dizajner.png");
+}
+.poduzetnik {
+  background-image: url("/assets/images/Poduzetnik.png");
+}
+
+@keyframes _scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.hero-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  padding: 1.8rem;
+}
+.hero-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "PP Neue Montreal Mono", sans-serif;
+  font-size: 1rem;
+  line-height: 1.1rem;
 }
