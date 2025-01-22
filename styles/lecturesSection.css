@@ -1,0 +1,199 @@
+.days-lectures-heading {
+  position: relative;
+  width: 100%;
+  height: 1571px;
+  overflow: hidden;
+}
+
+.days-lectures-heading .main-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.days-lectures-heading h1 {
+  position: absolute;
+  width: 981px;
+  height: 229px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 372px;
+  font-family: var(--font-fam-2);
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 144px;
+  letter-spacing: -5px;
+  color: #eaeaea;
+  display: flex;
+  align-items: flex-end;
+}
+
+.days-lectures-heading .section-breaker {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 45px;
+  z-index: 2;
+}
+
+.days-lectures-content {
+  width: 100%;
+  height: 1158.24px;
+  top: 3854px;
+  padding-left: 31.34px;
+  padding-right: 31.34px;
+  gap: 0px;
+}
+
+.picker {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+.picker p {
+  font-family: var(--font-fam);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #171615;
+}
+
+.picker-date {
+  display: flex;
+}
+
+.picker-date p {
+  width: 160px;
+  height: 48px;
+  padding: 16px 24px;
+  gap: 8px;
+}
+
+#picker-date-choosen {
+  border-bottom: 3px solid var(--orange-color);
+  color: var(--orange-color);
+}
+
+.picker-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-right: 20px;
+}
+
+#picker-tag-choosen {
+  width: 76px;
+  height: 48px;
+  padding: 16px 24px 16px 24px;
+  border: 0px 0px 3px 0px;
+  border-bottom: 3px solid var(--orange-color);
+  color: var(--orange-color);
+}
+
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.list-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 30px 70px;
+  width: 100%;
+  border-bottom: 4px dotted #ccc;
+}
+
+.list-item-time {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 150px;
+}
+
+.list-item-time p {
+  text-align: right;
+}
+
+.typewriter {
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #171615;
+}
+
+.fade {
+  text-align: right;
+  font-family: var(--font-fam);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #17161599;
+  fill-opacity: 60%;
+}
+
+.list-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.list-item-info .headline {
+  margin-bottom: 10px;
+}
+
+.label {
+  color: white;
+  background-color: var(--orange-color);
+  border: 6px solid var(--orange-color);
+  border-radius: 50%;
+  padding: 0 3px 0 3px;
+}
+
+.plus {
+  font-family: var(--font-fam-3);
+  font-size: 48px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.list-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 180px;
+  transform: translateY(-50%);
+  width: 119.01px;
+  height: 149.13px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/Speaker\ img\ 1.png");
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.list-item:hover::after {
+  opacity: 1;
+}
