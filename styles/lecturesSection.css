@@ -1,0 +1,32 @@
+.days-lectures-heading {
+  position: relative;
+  width: 100%;
+  height: 1571px;
+  overflow: hidden;
+}
+
+.days-lectures-heading img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.days-lectures-heading h1 {
+  position: absolute;
+  width: 981px;
+  height: 229px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 372px;
+  font-family: var(--font-fam-2);
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 144px;
+  letter-spacing: -5px;
+  color: #eaeaea;
+  display: flex;
+  align-items: flex-end;
+}
