@@ -78,3 +78,30 @@
 .days-images img {
   width: 22%;
 }
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .days-duck p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    width: 110px;
+  }
+  .days-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 70%;
+  }
+
+  .days-stats {
+    gap: 120px;
+  }
+  .days-stats p {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    width: 40%;
+    margin: 1rem 0;
+  }
+  .days-stats span {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
