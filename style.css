@@ -70,57 +70,56 @@ header {
 }
 
 .hero-scrolling {
-  display: flex;
-  width: 100%;
-  animation: _scroll 30s linear infinite;
-  margin: auto 0;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
-.hero-scrolling div {
+.hero-scrolling-content {
   display: flex;
-  width: 500px;
-  height: 620px;
+  width: 200%;
+  animation: scroll 15s linear infinite;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-right: 420px;
 }
-.hero-scrolling div p {
+
+.scrolling-people {
+  display: flex;
+  width: 200%;
+  height: 900px;
+}
+
+.scrolling-people img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.scrolling-text {
+  display: flex;
+  width: 200%;
+  z-index: 10;
+}
+
+.scrolling-text h1 {
   font-family: "PP Neue Montreal Mono", sans-serif;
   font-size: 7.5rem;
-  line-height: 9rem;
   color: #eaeaea;
-}
-.hero-scrolling div img {
-  margin: 0 auto;
+  z-index: 2;
 }
 
-.digitalac {
-  background-image: url("/assets/images/Digitalac.png");
-}
-.markentigas {
-  background-image: url("/assets/images/Marketingaš.png");
-}
-.programer {
-  margin-left: 70px;
-  background-image: url("/assets/images/Programer.png");
-}
-.dizajner {
-  background-image: url("/assets/images/Dizajner.png");
-}
-.poduzetnik {
-  background-image: url("/assets/images/Poduzetnik.png");
+.scrolling-text img {
+  width: 120px;
+  height: 145px;
+  z-index: 1;
 }
 
-@keyframes _scroll {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translate(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -133,6 +132,7 @@ header {
   width: 95%;
   align-items: center;
   padding: 1.8rem;
+  z-index: 1000;
 }
 .hero-menu li a {
   color: #ffffff;
