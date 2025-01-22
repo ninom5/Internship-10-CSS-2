@@ -75,6 +75,18 @@ header {
   /* object-fit: cover; */
   height: 100%;
 }
+.digitalac {
+  margin-left: 750px;
+}
+.markentigas,
+.programer,
+.poduzetnik {
+  margin-left: 400px;
+}
+
+.dizajner {
+  margin-left: 450px;
+}
 
 .scrolling-text {
   display: flex;
@@ -121,4 +133,36 @@ header {
   font-family: var(--font-fam);
   font-size: 1.3rem;
   line-height: 1.3rem;
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .hero {
+    align-self: center;
+    justify-self: center;
+    margin: 30px;
+    width: 95vw;
+    height: 95vh;
+  }
+  .hero-navigation p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+  .hero-navigation-button {
+    font-size: 0.9rem;
+    padding: 14px 16px;
+  }
+
+  .scrolling-text h1 {
+    font-size: 6rem;
+    align-self: center;
+  }
+  .scrolling-text img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-menu li a {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
 }
