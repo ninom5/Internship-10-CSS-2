@@ -44,6 +44,7 @@ header {
   color: #121212;
   margin-right: 30px;
   border: none;
+  cursor: pointer;
 }
 
 .hero-split-extra {
@@ -54,25 +55,24 @@ header {
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
-
 .hero-scrolling-content {
   display: flex;
   width: 200%;
   animation: scroll var(--animation-time) linear infinite;
   align-items: center;
+  height: 100%;
 }
 
 .scrolling-people {
   display: flex;
   width: 200%;
-  height: 900px;
+  height: 100%;
 }
-
 .scrolling-people img {
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   height: 100%;
 }
 
@@ -80,18 +80,18 @@ header {
   display: flex;
   width: 200%;
   z-index: 10;
+  position: absolute;
+  left: 650px;
 }
-
 .scrolling-text h1 {
   font-family: var(--font-fam);
-  font-size: 7.5rem;
+  font-size: 9rem;
   color: #eaeaea;
   z-index: 2;
 }
-
 .scrolling-text img {
-  width: 120px;
-  height: 145px;
+  width: 200px;
+  height: 200px;
   z-index: 1;
 }
 
@@ -113,7 +113,7 @@ header {
   width: 95%;
   align-items: center;
   padding: 1.8rem;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 .hero-menu li a {
   color: #ffffff;
