@@ -1,6 +1,8 @@
 :root {
   --font-fam: "PP Neue Montreal Mono", sans-serif;
   --font-fam-2: "PP Neue Machina", sans-serif;
+  --font-fam-3: "PP Neue Montreal Mono Book", sans-serif;
   --main-color: #f5ede1;
+  --orange-color: #ff482f;
   --animation-time: 30s;
 }

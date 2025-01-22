@@ -40,3 +40,148 @@
   height: 45px;
   z-index: 2;
 }
+
+.days-lectures-content {
+  width: 1376px;
+  height: 1158.24px;
+  top: 3854px;
+  padding-left: 31.34px;
+  gap: 0px;
+}
+
+.picker {
+  display: flex;
+  justify-content: space-between;
+  width: 1450px;
+}
+
+.picker-date {
+  display: flex;
+}
+
+#picker-date-1 {
+  width: 160px;
+  height: 48px;
+  padding: 16px 24px;
+  gap: 8px;
+  border: 0;
+  border-bottom: 3px solid var(--orange-color);
+  font-family: var(--font-fam);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: var(--orange-color);
+}
+
+#picker-date-2 {
+  width: 170px;
+  height: 48px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  font-family: var(--font-fam);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #171615;
+}
+
+.picker-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-fam);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #171615;
+}
+
+#picker-tag-1 {
+  width: 76px;
+  height: 48px;
+  padding: 16px 24px 16px 24px;
+  border: 0px 0px 3px 0px;
+  border-bottom: 3px solid var(--orange-color);
+  color: var(--orange-color);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  gap: 16px;
+  width: 1376px;
+  height: 124px;
+}
+
+.list-item-time {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-item-time-2 {
+  align-self: flex-end;
+}
+
+.typewriter {
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #171615;
+}
+
+.fade {
+  text-align: right;
+  font-family: var(--font-fam);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #17161599;
+  fill-opacity: 60%;
+}
+
+.list-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.list-item-info .headline {
+  margin-bottom: 10px;
+}
+
+.label {
+  color: white;
+  background-color: #ff482f;
+  border: 6px solid #ff482f;
+  border-radius: 50%;
+  padding: 0 3px 0 3px;
+}
+
+.plus {
+  font-family: var(--font-fam-3);
+  font-size: 48px;
+  font-weight: 100;
+  cursor: pointer;
+}
