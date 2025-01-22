@@ -16,7 +16,7 @@ body {
   width: 100%;
   height: 100%;
   /* overflow: hidden; */
-  background-color: #f5ede1;
+  background-color: var(--main-color);
 }
 
 header {
@@ -49,9 +49,9 @@ header {
   padding: 30px;
 }
 .hero-navigation p {
-  font-size: 1rem;
-  line-height: 16px;
-  font-family: "PP Neue Montreal Mono", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-family: var(--font-fam);
   text-align: center;
 }
 .hero-navigation p:first-child {
@@ -61,12 +61,16 @@ header {
 .hero-navigation-button {
   /* width: 10rem;
     height: 2.7rem; */
-  padding: 1rem 1.1rem;
-  font-family: "PP Neue Montreal Mono", sans-serif;
-  font-size: 1rem;
+  padding: 1.2rem 1.3rem;
+  font-family: var(--font-fam);
+  font-size: 1.4rem;
   color: #121212;
   margin-right: 30px;
   border: none;
+}
+
+.hero-split-extra {
+  margin: 0 0.8rem;
 }
 
 .hero-scrolling {
@@ -79,7 +83,7 @@ header {
 .hero-scrolling-content {
   display: flex;
   width: 200%;
-  animation: scroll 15s linear infinite;
+  animation: scroll var(--animation-time) linear infinite;
   align-items: center;
 }
 
@@ -102,7 +106,7 @@ header {
 }
 
 .scrolling-text h1 {
-  font-family: "PP Neue Montreal Mono", sans-serif;
+  font-family: var(--font-fam);
   font-size: 7.5rem;
   color: #eaeaea;
   z-index: 2;
@@ -137,7 +141,91 @@ header {
 .hero-menu li a {
   color: #ffffff;
   text-decoration: none;
-  font-family: "PP Neue Montreal Mono", sans-serif;
-  font-size: 1rem;
-  line-height: 1.1rem;
+  font-family: var(--font-fam);
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+
+.about-days {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  /* height: auto; */
+  /* padding: 20px 50px 0 50px; */
+  padding: 0 50px;
+  justify-content: space-between;
+}
+
+.days-duck {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 90px;
+  /* padding: 0 50px; */
+}
+.days-duck p {
+  font-family: var(--font-fam);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  width: 200px;
+  letter-spacing: 0.1rem;
+}
+.extra-space {
+  margin-left: 0.5rem;
+}
+.days-duck img {
+  width: 90%;
+  padding-top: 90px;
+}
+
+.days-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 5rem;
+}
+.days-info p {
+  width: 700px;
+  color: #171615b2;
+  font-family: var(--font-fam);
+  font-size: 2.9rem;
+  line-height: 3rem;
+}
+
+.days-stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  gap: 50px;
+}
+.days-stats p {
+  font-size: 1.5rem;
+  line-height: 5rem;
+  color: #171615;
+  margin: 6rem 0;
+  width: 500px;
+}
+.days-stats span {
+  line-height: 6.5rem;
+  font-size: 11rem;
+  color: #ff482f;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.days-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-self: center;
+  padding-bottom: 3rem;
+  margin-top: 200px;
+}
+.days-images img {
+  width: 22%;
 }
