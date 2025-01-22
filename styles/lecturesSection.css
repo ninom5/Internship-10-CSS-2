@@ -113,12 +113,14 @@
 }
 
 .list {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
 
 .list-item {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 4fr auto;
   align-items: center;
@@ -188,3 +190,31 @@
   font-weight: 100;
   cursor: pointer;
 }
+
+.list-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 180px;
+  transform: translateY(-50%);
+  width: 119.01px;
+  height: 149.13px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/Speaker\ img\ 1.png");
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.list-item:hover::after {
+  opacity: 1;
+}
+
+width: 119.01px;
+height: 149.13px;
+top: 31.01px;
+left: 25.93px;
+gap: 0px;
+opacity: 0px;
+angle: 5 deg;
