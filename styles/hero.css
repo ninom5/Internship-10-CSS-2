@@ -1,0 +1,124 @@
+header {
+  width: 100%;
+  height: 100%;
+}
+.hero {
+  position: relative;
+  background-image: url("../assets/images/Hero\ background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 100px);
+  height: calc(100vh - 100px);
+  margin: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.hero-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.hero-navigation p {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-family: var(--font-fam);
+  text-align: center;
+}
+.hero-navigation p:first-child {
+  padding-left: 30px;
+  text-align: left;
+}
+.hero-navigation-button {
+  padding: 1.2rem 1.3rem;
+  font-family: var(--font-fam);
+  font-size: 1.4rem;
+  color: #121212;
+  margin-right: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-split-extra {
+  margin: 0 0.8rem;
+}
+
+.hero-scrolling {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+}
+.hero-scrolling-content {
+  display: flex;
+  width: 200%;
+  animation: scroll var(--animation-time) linear infinite;
+  align-items: center;
+  height: 100%;
+}
+
+.scrolling-people {
+  display: flex;
+  width: 200%;
+  height: 100%;
+}
+.scrolling-people img {
+  width: 100%;
+  /* object-fit: cover; */
+  height: 100%;
+}
+
+.scrolling-text {
+  display: flex;
+  width: 200%;
+  z-index: 10;
+  position: absolute;
+  left: 650px;
+}
+.scrolling-text h1 {
+  font-family: var(--font-fam);
+  font-size: 9rem;
+  color: #eaeaea;
+  z-index: 2;
+}
+.scrolling-text img {
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.hero-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  padding: 1.8rem;
+  /* z-index: 1000; */
+}
+.hero-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-fam);
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
