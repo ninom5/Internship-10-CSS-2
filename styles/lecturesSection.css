@@ -52,7 +52,7 @@
 .picker {
   display: flex;
   justify-content: space-between;
-  width: 1450px;
+  width: 100%;
   margin-bottom: 70px;
 }
 
@@ -125,10 +125,9 @@
   grid-template-columns: 1fr 4fr auto;
   align-items: center;
   gap: 16px;
-  padding: 16px 70px;
+  padding: 30px 70px;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  border-bottom: 4px dotted #ccc;
 }
 
 .list-item-time {
@@ -210,11 +209,3 @@
 .list-item:hover::after {
   opacity: 1;
 }
-
-width: 119.01px;
-height: 149.13px;
-top: 31.01px;
-left: 25.93px;
-gap: 0px;
-opacity: 0px;
-angle: 5 deg;
