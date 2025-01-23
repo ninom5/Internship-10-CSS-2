@@ -12,7 +12,7 @@
 .section-location {
   background-color: #085f59;
   position: relative;
-  height: 2995px;
+  height: 3065px;
 }
 
 .section-location-breaker {
@@ -165,10 +165,12 @@
 }
 
 #location-text2 {
-  width: 544px;
-  height: 96px;
+  max-width: 100%;
+  width: 90%;
+  padding-left: 7%;
+  height: auto;
   font-family: var(--font-fam-2);
-  font-size: 24px;
+  font-size: 1.45vw;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -1px;
@@ -177,6 +179,9 @@
   text-decoration-skip-ink: none;
   color: white;
   opacity: 70%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #dotted-breaker {
@@ -192,14 +197,13 @@
 
 #visual-date {
   position: absolute;
-  width: 1405px;
+  width: 100%;
   height: 488px;
   top: 2505.78px;
-  left: 50px;
   font-family: var(--font-fam-2);
-  font-size: 290px;
+  font-size: 20vw;
   font-weight: 500;
-  line-height: 262.26px;
+  line-height: 1;
   letter-spacing: 5.245291709899902px;
   text-align: center;
   color: white;
