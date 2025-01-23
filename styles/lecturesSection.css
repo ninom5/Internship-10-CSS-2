@@ -26,7 +26,7 @@
   font-size: 120px;
   line-height: 144px;
   letter-spacing: -5px;
-  color: #eaeaea;
+  color: var(--light-text-color);
   display: flex;
   align-items: flex-end;
 }
