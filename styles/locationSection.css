@@ -12,7 +12,7 @@
 .section-location {
   background-color: #085f59;
   position: relative;
-  height: 2200px;
+  height: 2995px;
 }
 
 .section-location-breaker {
@@ -72,6 +72,7 @@
   height: 677px;
   top: 1544px;
   z-index: 2;
+  background-color: rgba(11, 215, 201, 0.504);
 }
 
 #cover-image {
@@ -89,4 +90,118 @@
   height: 45px;
   top: 2196px;
   z-index: 5;
+}
+
+#stamp-headline {
+  position: absolute;
+  top: 1295px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 308px;
+  height: 96px;
+  font-family: var(--font-fam-2);
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--orange-color);
+  z-index: 6;
+  padding-bottom: 400px;
+  border-bottom: 4px dotted #ccc;
+}
+
+#stamp-adress {
+  position: absolute;
+  top: 1720px;
+  left: 50%;
+  padding-left: 10px;
+  transform: translateX(-50%);
+  width: 326px;
+  height: 48px;
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  z-index: 6;
+}
+
+#location-text1 {
+  position: absolute;
+  width: 169px;
+  height: 16px;
+  top: 2273px;
+  left: 55px;
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: white;
+  opacity: 70%;
+}
+
+#label-text2-container {
+  display: flex;
+  position: relative;
+  width: 621px;
+  height: 96px;
+  top: 2273px;
+  left: 480px;
+  gap: 24px;
+}
+
+#location-label {
+  height: 25px;
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+#location-text2 {
+  width: 544px;
+  height: 96px;
+  font-family: var(--font-fam-2);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+  opacity: 70%;
+}
+
+#dotted-breaker {
+  position: absolute;
+  border-bottom: 4px dotted white;
+  opacity: 30%;
+  top: 2425.78px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 1px;
+}
+
+#visual-date {
+  position: absolute;
+  width: 1405px;
+  height: 488px;
+  top: 2505.78px;
+  left: 50px;
+  font-family: var(--font-fam-2);
+  font-size: 290px;
+  font-weight: 500;
+  line-height: 262.26px;
+  letter-spacing: 5.245291709899902px;
+  text-align: center;
+  color: white;
+  opacity: 20%;
 }
