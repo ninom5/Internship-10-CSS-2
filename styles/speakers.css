@@ -6,13 +6,12 @@
 .section-speakers-breaker {
   width: 100%;
 }
-
 .section-speakers-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background-color: #e4573e;
+  background-color: var(--speaker-color);
   background-image: linear-gradient(
       rgba(228, 87, 62, 0.2),
       rgba(228, 87, 62, 0.2)
@@ -22,6 +21,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 .speakers-heading {
@@ -34,10 +34,12 @@
   line-height: 1rem;
   letter-spacing: 1px;
   font-family: var(--font-fam);
-  font-weight: 500;
+  animation: fade-in-speakers linear;
+  animation-timeline: view();
 }
+
 .speakers-heading h1 {
-  color: #eaeaea;
+  color: var(--ea-color);
   font-family: var(--font-fam-2);
   font-size: 7.5rem;
   line-height: 9rem;
@@ -47,11 +49,12 @@
 .section-speakers-images {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 100%;
   padding: 30px;
   margin-top: 100px;
   min-height: 150vh;
+  justify-content: space-between;
 }
 
 .speaker-images-column {
@@ -61,26 +64,80 @@
   min-height: 125vh;
 }
 
+.image-txt-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.image-txt-frame h3 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  letter-spacing: -0.5px;
+  font-family: var(--font-fam-2);
+  margin-top: 1.25rem;
+  margin-bottom: 0.7rem;
+}
+.image-txt-frame p {
+  line-height: 1.1rem;
+  font-size: 1rem;
+  font-family: var(--font-fam);
+  letter-spacing: 1px;
+}
+
 .section-speakers-images img {
-  width: 320px;
-  height: 401px;
+  width: 100%;
+  height: 421px;
+  animation: fade-in-speakers linear;
+  animation-timeline: view();
 }
 
 .first-column {
-  gap: 950px;
+  gap: 850px;
 }
-.second-column img {
-  margin: auto 0;
+
+.second-column {
+  display: flex;
+  justify-content: center;
 }
+.speaker-images-column.second-column > .image-txt-frame {
+  margin-bottom: 180px;
+}
+
 .third-column {
   margin-top: 130px;
 }
 .third-column {
   gap: 1000px;
 }
-.third-column img:nth-of-type(2) {
+
+#uk {
   opacity: 40%;
 }
 .fourth-column {
   margin-top: 900px;
+}
+
+#all-speakers {
+  font-family: var(--font-fam);
+  color: #171615;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 620px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+@keyframes fade-in-speakers {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  50% {
+    scale: 1;
+    opacity: 1;
+  }
 }
