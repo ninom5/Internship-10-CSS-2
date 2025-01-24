@@ -120,8 +120,8 @@
   font-size: clamp(1rem, 4vw, 1.2rem);
   line-height: 1.5;
   text-align: left;
-  color: #171615b2;
-  opacity: 90%;
+  color: var(--sponsor-text-gray);
+  opacity: 70%;
   padding-left: 50px;
   border-left: 4px dotted #ccc;
 }
@@ -150,6 +150,6 @@
   line-height: 16px;
   letter-spacing: 1px;
   text-align: left;
-  color: #171615;
+  color: var(--sponsor-text-gray);
   opacity: 60%;
 }
