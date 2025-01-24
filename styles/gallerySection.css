@@ -14,25 +14,21 @@
   position: absolute;
   width: 100%;
 }
-
 .gallery-cover img:first-of-type {
   height: 701px;
   z-index: 1;
 }
-
 .gallery-cover img:nth-of-type(2) {
   height: 701px;
   opacity: 30%;
   z-index: 2;
 }
-
 .gallery-cover img:nth-of-type(3) {
   width: 50px;
   top: 56px;
   right: 56px;
   z-index: 3;
 }
-
 .gallery-cover img:nth-of-type(4) {
   z-index: 4;
   height: 45px;
@@ -47,7 +43,6 @@
   color: white;
   font-family: Arial, sans-serif;
 }
-
 .gallery-cover h1 {
   top: 355px;
   left: 50%;
@@ -62,7 +57,6 @@
   text-decoration-skip-ink: none;
   color: var(--light-text-color);
 }
-
 .gallery-cover p {
   top: 600px;
   left: 50%;
@@ -77,11 +71,11 @@
   text-decoration-skip-ink: none;
 }
 
-/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
 .gallery-content {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .gallery-content-breaker {
@@ -102,6 +96,7 @@
 .quote {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   align-items: center;
   gap: 280px;
   padding: 30px 0px 0px 120px;
@@ -116,40 +111,39 @@
 .quote img {
   width: 35.5px;
   height: 32.17px;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
 .quote-text {
-  font-family: var(--font-fam-2); /* Postavi font za tekst */
+  font-family: var(--font-fam-2);
   font-size: clamp(1rem, 4vw, 1.2rem);
-  line-height: 1.5; /* Poboljšava čitljivost */
+  line-height: 1.5;
   text-align: left;
-  color: #333; /* Standardna boja za tekst */
+  color: #171615b2;
+  opacity: 90%;
   padding-left: 50px;
   border-left: 4px dotted #ccc;
 }
-.quote-text.black {
-  color: #000; /* Specifična boja za crni tekst */
+#black-quote .quote-text {
+  color: white;
+  opacity: 70%;
 }
 
+#third-quote {
+  display: flex;
+  gap: 65px;
+  align-items: flex-start;
+}
 #third-element {
   display: flex;
-  flex-direction: column; /* Organizacija slike i teksta unutar trećeg citata */
-  align-items: center; /* Centriraj sadržaj */
-  gap: 10px; /* Razmak između slike i teksta */
-}
-#third-element p {
-  font-family: var(--font-fam-3);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  text-align: center;
-  color: #171615;
-  opacity: 0.6;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
 }
 #third-element p {
   width: 246px;
-  height: 56px;
+  height: auto;
   font-family: var(--font-fam-3);
   font-size: 14px;
   font-weight: 500;
