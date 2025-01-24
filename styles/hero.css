@@ -32,6 +32,7 @@ header {
   line-height: 1.6rem;
   font-family: var(--font-fam);
   text-align: center;
+  letter-spacing: 2px;
 }
 .hero-navigation p:first-child {
   padding-left: 30px;
@@ -41,10 +42,12 @@ header {
   padding: 1.2rem 1.3rem;
   font-family: var(--font-fam);
   font-size: 1.4rem;
+  line-height: 1.4rem;
   color: #121212;
   margin-right: 30px;
   border: none;
   cursor: pointer;
+  letter-spacing: 1.5px;
 }
 
 .hero-split-extra {
@@ -53,14 +56,14 @@ header {
 
 .hero-scrolling {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100vw;
   height: 100%;
 }
 .hero-scrolling-content {
   display: flex;
   width: 200%;
-  animation: scroll var(--animation-time) linear infinite;
+  animation: scroll 15s linear infinite;
   align-items: center;
   height: 100%;
 }
@@ -70,22 +73,27 @@ header {
   width: 200%;
   height: 100%;
 }
-.scrolling-people img {
+.scrolling-people > img {
   width: 100%;
   /* object-fit: cover; */
   height: 100%;
-}
-.digitalac {
-  margin-left: 750px;
-}
-.markentigas,
-.programer,
-.poduzetnik {
-  margin-left: 400px;
+  margin-bottom: -70px;
 }
 
+.digitalac {
+  margin-left: 700px;
+}
+.markentigas {
+  margin-left: 400px;
+}
+.programer {
+  margin-left: 270px;
+}
 .dizajner {
-  margin-left: 450px;
+  margin-left: 350px;
+}
+.poduzetnik {
+  margin-left: 235px;
 }
 
 .scrolling-text {
@@ -94,17 +102,22 @@ header {
   z-index: 10;
   position: absolute;
   left: 650px;
+  align-items: center;
+  margin-bottom: 100px;
 }
 .scrolling-text h1 {
-  font-family: var(--font-fam);
-  font-size: 9rem;
-  color: #eaeaea;
+  font-family: var(--font-fam-2);
+  font-size: 8rem;
+  line-height: 9.6rem;
+  color: var(--light-text-color);
   z-index: 2;
+  letter-spacing: -1px;
 }
 .scrolling-text img {
   width: 200px;
   height: 200px;
   z-index: 1;
+  margin: 0 10px;
 }
 
 @keyframes scroll {
@@ -126,6 +139,8 @@ header {
   align-items: center;
   padding: 1.8rem;
   /* z-index: 1000; */
+  position: absolute;
+  top: 90%;
 }
 .hero-menu li a {
   color: #ffffff;
@@ -143,12 +158,16 @@ header {
     width: 95vw;
     height: 95vh;
   }
+  .hero-navigation {
+    padding: 25px 0;
+  }
   .hero-navigation p {
     font-size: 0.9rem;
     line-height: 1rem;
   }
   .hero-navigation-button {
     font-size: 0.9rem;
+    line-height: 0.9rem;
     padding: 14px 16px;
   }
 
