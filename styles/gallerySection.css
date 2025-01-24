@@ -36,7 +36,8 @@
 .gallery-cover img:nth-of-type(4) {
   z-index: 4;
   height: 45px;
-  top: 656px;
+  top: 657px;
+  filter: brightness(200%) saturate(0%);
 }
 
 .gallery-cover h1,
@@ -76,35 +77,57 @@
   text-decoration-skip-ink: none;
 }
 
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
 .gallery-content {
   display: flex;
-  flex-direction: column; /* Raspoređuje djecu sekcije u stupce */
-  gap: 20px; /* Razmak između citata */
-  padding: 20px 120px; /* Unutarnji razmak cijele sekcije */
+  flex-direction: column;
+  position: relative;
+}
+
+.gallery-content-breaker {
+  position: absolute;
+  width: 100%;
+  height: 65px;
+}
+#black-breaker {
+  top: 70px;
+  transform: rotate(-0.9deg);
+  filter: brightness(0%);
+}
+#beige-breaker {
+  top: 220px;
+  transform: rotate(0.9deg);
 }
 
 .quote {
   display: flex;
-  flex-direction: row; /* Raspoređuje djecu unutar svakog quote-a u redove */
-  align-items: center; /* Poravnava elemente po visini */
-  gap: 80px; /* Razmak između slike i teksta */
+  flex-direction: row;
+  align-items: center;
+  gap: 280px;
+  padding: 30px 0px 0px 120px;
+}
+#white-quote {
+  background-color: white;
+}
+#black-quote {
+  background-color: #000;
 }
 
 .quote img {
   width: 35.5px;
   height: 32.17px;
+  margin-bottom: 30px;
 }
 
 .quote-text {
   font-family: var(--font-fam-2); /* Postavi font za tekst */
-  font-size: 18px; /* Prilagodi veličinu fonta */
+  font-size: clamp(1rem, 4vw, 1.2rem);
   line-height: 1.5; /* Poboljšava čitljivost */
   text-align: left;
   color: #333; /* Standardna boja za tekst */
   padding-left: 50px;
   border-left: 4px dotted #ccc;
 }
-
 .quote-text.black {
   color: #000; /* Specifična boja za crni tekst */
 }
@@ -115,7 +138,6 @@
   align-items: center; /* Centriraj sadržaj */
   gap: 10px; /* Razmak između slike i teksta */
 }
-
 #third-element p {
   font-family: var(--font-fam-3);
   font-size: 14px;
@@ -125,7 +147,6 @@
   color: #171615;
   opacity: 0.6;
 }
-
 #third-element p {
   width: 246px;
   height: 56px;
