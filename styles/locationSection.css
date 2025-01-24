@@ -1,4 +1,6 @@
 .section-location {
+  position: relative;
+  height: 3065px;
   background-color: #085f59;
   background-image: linear-gradient(rgba(8, 95, 89, 0), rgba(8, 95, 89, 0)),
     url("../assets/images/BG texture.png");
@@ -7,12 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.section-location {
-  background-color: #085f59;
-  position: relative;
-  height: 3065px;
 }
 
 .section-location-breaker {
@@ -32,7 +28,7 @@
   font-size: 20vw;
   font-weight: 500;
   line-height: 341.49px;
-  letter-spacing: -11.915552139282227px;
+  letter-spacing: -11.92px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -62,7 +58,6 @@
   max-width: 100%;
   height: 679px;
   top: 1544px;
-  left: 1px;
   z-index: 1;
 }
 
@@ -80,7 +75,6 @@
   width: 100%;
   height: 945.16px;
   top: 1276px;
-  left: 1px;
   z-index: 4;
 }
 
@@ -204,7 +198,7 @@
   font-size: 20vw;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 5.245291709899902px;
+  letter-spacing: 5.25px;
   text-align: center;
   color: white;
   opacity: 20%;

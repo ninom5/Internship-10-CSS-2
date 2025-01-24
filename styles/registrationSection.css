@@ -1,0 +1,60 @@
+.registration-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background-color: #171615;
+  background-image: linear-gradient(rgba(8, 95, 89, 0), rgba(8, 95, 89, 0)),
+    url("../assets/images/BG texture.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-registration-breaker {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  height: 45px;
+}
+
+.registration-section .small-text {
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: white;
+  opacity: 70%;
+}
+
+.registration-section .small-text.top {
+  padding-top: 100px;
+}
+
+.registration-section .small-text.bottom {
+  padding: 70px 0 170px 0;
+}
+
+#registration-headline {
+  font-family: var(--font-fam-2);
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 144px;
+  letter-spacing: -5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--light-text-color);
+}
+
+#registration-image {
+  width: 1334.22px;
+  height: 750.5px;
+  top: 14414.17px;
+  left: 53px;
+}
