@@ -113,6 +113,8 @@
 
 #uk {
   opacity: 40%;
+  animation: fade-in-faded-speaker linear;
+  animation-timeline: view();
 }
 .fourth-column {
   margin-top: 900px;
@@ -139,5 +141,16 @@
   50% {
     scale: 1;
     opacity: 1;
+  }
+}
+
+@keyframes fade-in-faded-speaker {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  50% {
+    scale: 1;
+    opacity: 40%;
   }
 }
