@@ -2,6 +2,7 @@
 @import "./styles/duckSection.css";
 @import "./styles/lecturesSection.css";
 @import "./styles/speakers.css";
+@import "./styles/locationSection.css";
 
 @font-face {
   font-family: "PP Neue Montreal Mono";
