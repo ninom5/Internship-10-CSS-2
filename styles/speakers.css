@@ -113,6 +113,7 @@
 
 #uk {
   opacity: 40%;
+  animation: none; /*ili dodat novu animaciju?*/
 }
 .fourth-column {
   margin-top: 900px;

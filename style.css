@@ -4,6 +4,7 @@
 @import "./styles/lecturesSection.css";
 @import "./styles/speakers.css";
 @import "./styles/locationSection.css";
+@import "./styles/sponsors.css";
 
 @font-face {
   font-family: "PP Neue Montreal Mono";
