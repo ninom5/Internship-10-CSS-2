@@ -1,0 +1,140 @@
+.gallery-section {
+  position: relative;
+  height: 701px;
+  top: -1px;
+}
+
+.gallery-cover {
+  position: relative;
+  width: 100%;
+  max-height: 701px;
+}
+
+.gallery-cover img {
+  position: absolute;
+  width: 100%;
+}
+
+.gallery-cover img:first-of-type {
+  height: 701px;
+  z-index: 1;
+}
+
+.gallery-cover img:nth-of-type(2) {
+  height: 701px;
+  opacity: 30%;
+  z-index: 2;
+}
+
+.gallery-cover img:nth-of-type(3) {
+  width: 50px;
+  top: 56px;
+  right: 56px;
+  z-index: 3;
+}
+
+.gallery-cover img:nth-of-type(4) {
+  z-index: 4;
+  height: 45px;
+  top: 656px;
+}
+
+.gallery-cover h1,
+.gallery-cover p {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-cover h1 {
+  top: 355px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-fam-2);
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 144px;
+  letter-spacing: -5;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--light-text-color);
+}
+
+.gallery-cover p {
+  top: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column; /* Raspoređuje djecu sekcije u stupce */
+  gap: 20px; /* Razmak između citata */
+  padding: 20px 120px; /* Unutarnji razmak cijele sekcije */
+}
+
+.quote {
+  display: flex;
+  flex-direction: row; /* Raspoređuje djecu unutar svakog quote-a u redove */
+  align-items: center; /* Poravnava elemente po visini */
+  gap: 80px; /* Razmak između slike i teksta */
+}
+
+.quote img {
+  width: 35.5px;
+  height: 32.17px;
+}
+
+.quote-text {
+  font-family: var(--font-fam-2); /* Postavi font za tekst */
+  font-size: 18px; /* Prilagodi veličinu fonta */
+  line-height: 1.5; /* Poboljšava čitljivost */
+  text-align: left;
+  color: #333; /* Standardna boja za tekst */
+  padding-left: 50px;
+  border-left: 4px dotted #ccc;
+}
+
+.quote-text.black {
+  color: #000; /* Specifična boja za crni tekst */
+}
+
+#third-element {
+  display: flex;
+  flex-direction: column; /* Organizacija slike i teksta unutar trećeg citata */
+  align-items: center; /* Centriraj sadržaj */
+  gap: 10px; /* Razmak između slike i teksta */
+}
+
+#third-element p {
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #171615;
+  opacity: 0.6;
+}
+
+#third-element p {
+  width: 246px;
+  height: 56px;
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #171615;
+  opacity: 60%;
+}
