@@ -40,7 +40,7 @@
 
 .faq-question {
   display: flex;
-  gap: 24%;
+  gap: 22%;
   padding: 40px 0;
 }
 .faq-question:not(:last-child) {
@@ -51,17 +51,16 @@
   min-width: 40px;
   background-image: url("../assets/images/Ellipse\ 96.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .faq-question h3,
 #first-question p {
   font-family: var(--font-fam-2);
   color: white;
-  opacity: 70%;
   text-align: left;
 }
 .faq-question h3 {
@@ -69,12 +68,14 @@
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -1px;
+  opacity: 70%;
 }
 #first-question p {
   padding-top: 20px;
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
+  opacity: 50%;
 }
 
 .faq-question p:last-child {
