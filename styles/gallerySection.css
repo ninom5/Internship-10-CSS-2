@@ -1,0 +1,155 @@
+.gallery-section {
+  position: relative;
+  height: 701px;
+  top: -1px;
+}
+
+.gallery-cover {
+  position: relative;
+  width: 100%;
+  max-height: 701px;
+}
+
+.gallery-cover img {
+  position: absolute;
+  width: 100%;
+}
+.gallery-cover img:first-of-type {
+  height: 701px;
+  z-index: 1;
+}
+.gallery-cover img:nth-of-type(2) {
+  height: 701px;
+  opacity: 30%;
+  z-index: 2;
+}
+.gallery-cover img:nth-of-type(3) {
+  width: 50px;
+  top: 56px;
+  right: 56px;
+  z-index: 3;
+}
+.gallery-cover img:nth-of-type(4) {
+  z-index: 4;
+  height: 45px;
+  top: 657px;
+  filter: brightness(200%) saturate(0%);
+}
+
+.gallery-cover h1,
+.gallery-cover p {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.gallery-cover h1 {
+  top: 355px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-fam-2);
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 144px;
+  letter-spacing: -5;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--light-text-color);
+}
+.gallery-cover p {
+  top: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-content-breaker {
+  position: absolute;
+  width: 100%;
+  height: 65px;
+}
+#black-breaker {
+  top: 70px;
+  transform: rotate(-0.9deg);
+  filter: brightness(0%);
+}
+#beige-breaker {
+  top: 220px;
+  transform: rotate(0.9deg);
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  gap: 280px;
+  padding: 30px 0px 0px 120px;
+}
+#white-quote {
+  background-color: white;
+}
+#black-quote {
+  background-color: #000;
+}
+
+.quote img {
+  width: 35.5px;
+  height: 32.17px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.quote-text {
+  font-family: var(--font-fam-2);
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  line-height: 1.5;
+  text-align: left;
+  color: var(--sponsor-text-gray);
+  opacity: 70%;
+  padding-left: 50px;
+  border-left: 4px dotted #ccc;
+}
+#black-quote .quote-text {
+  color: white;
+  opacity: 70%;
+}
+
+#third-quote {
+  display: flex;
+  gap: 65px;
+  align-items: flex-start;
+}
+#third-element {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+#third-element p {
+  width: 246px;
+  height: auto;
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: var(--sponsor-text-gray);
+  opacity: 60%;
+}

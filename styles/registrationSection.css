@@ -53,8 +53,8 @@
 }
 
 #registration-image {
-  width: 1334.22px;
-  height: 750.5px;
+  width: 100%;
+  height: auto;
   top: 14414.17px;
   left: 53px;
 }
