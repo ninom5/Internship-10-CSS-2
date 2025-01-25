@@ -5,6 +5,17 @@
   width: 100%;
   padding: 30px 50px 0 50px;
   justify-content: space-between;
+  background-color: var(--main-color);
+  background-image: linear-gradient(
+      rgba(245, 237, 225, 0),
+      rgba(245, 237, 225, 0)
+    ),
+    url("../assets/images/BG texture.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 .days-duck {
@@ -19,10 +30,9 @@
   line-height: 1.5rem;
   width: 200px;
   letter-spacing: 0.1rem;
+  color: var(--sponsor-text-gray);
 }
-.extra-space {
-  margin-left: 0.5rem;
-}
+
 .days-duck img {
   width: 90%;
   padding-top: 90px;
@@ -72,14 +82,27 @@
   align-items: center;
   justify-content: space-evenly;
   justify-self: center;
-  padding-bottom: 3rem;
-  margin-top: 200px;
+  padding: 12.5rem 0 3rem 0;
+  background-color: var(--main-color);
+  background-image: linear-gradient(
+      rgba(245, 237, 225, 0),
+      rgba(245, 237, 225, 0)
+    ),
+    url("../assets/images/BG texture.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 .days-images img {
   width: 22%;
 }
 
 @media (min-width: 1100px) and (max-width: 1600px) {
+  .days-duck {
+    padding-left: 0;
+  }
   .days-duck p {
     font-size: 0.8rem;
     line-height: 1rem;
@@ -90,9 +113,13 @@
     line-height: 2rem;
     width: 70%;
   }
+  .days-duck img {
+    width: 100%;
+    padding-top: 130px;
+  }
 
   .days-stats {
-    gap: 120px;
+    gap: 110px;
   }
   .days-stats p {
     font-size: 0.9rem;
