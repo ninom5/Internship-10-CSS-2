@@ -1,0 +1,91 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sponsor-text-gray);
+  background-image: linear-gradient(
+      rgba(23, 22, 21, 0.2),
+      rgba(23, 22, 21, 0.2)
+    ),
+    url("../assets/images/BG texture.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* margin-top: 90px; */
+  align-items: center;
+}
+
+#tldr-section-breaker {
+  position: absolute;
+  width: 100%;
+  top: -43px;
+  height: 45px;
+}
+
+.questions h1 {
+  color: var(--light-text-color);
+  font-family: var(--font-fam-2);
+  font-size: 7.5rem;
+  line-height: 7.5rem;
+  text-align: center;
+  margin-top: 300px;
+}
+.questions p {
+  font-family: var(--font-fam-3);
+  font-size: 0.9rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-top: 70px;
+}
+
+.social-media {
+  display: grid;
+  grid-template: repeat(3, 25px) / repeat(4, 1fr);
+  margin-top: 150px;
+  height: 200px;
+  gap: 10px;
+}
+.social-media img {
+  width: 165px;
+  cursor: pointer;
+}
+
+#facebook-logo {
+  grid-row: 2;
+  grid-column: 1;
+}
+#linkedin-logo {
+  grid-row: 3;
+  grid-column: 2;
+}
+#ig-logo {
+  grid-row: 1;
+  grid-column: 3;
+}
+#yt-logo {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+#hr {
+  display: flex;
+  border-top: 4px dotted rgba(255, 255, 255, 0.2);
+  width: 95%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+#hr p {
+  font-family: var(--font-fam-2);
+  opacity: 70%;
+  margin: auto 0;
+  padding: 0 30px;
+}
+#hr p:nth-of-type(2) {
+  line-height: 1.5rem;
+  letter-spacing: -1%;
+}

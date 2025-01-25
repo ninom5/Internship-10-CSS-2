@@ -2,6 +2,19 @@ header {
   width: 100%;
   height: 100%;
 }
+#hero-header {
+  background-color: var(--main-color);
+  background-image: linear-gradient(
+      rgba(245, 237, 225, 0),
+      rgba(245, 237, 225, 0)
+    ),
+    url("../assets/images/BG texture.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
 .hero {
   position: relative;
   background-image: url("../assets/images/Hero\ background.jpg");
@@ -50,10 +63,6 @@ header {
   letter-spacing: 1.5px;
 }
 
-.hero-split-extra {
-  margin: 0 0.8rem;
-}
-
 .hero-scrolling {
   position: relative;
   /* overflow: hidden; */
@@ -63,7 +72,7 @@ header {
 .hero-scrolling-content {
   display: flex;
   width: 200%;
-  animation: scroll 15s linear infinite;
+  animation: scroll var(--animation-time) linear infinite;
   align-items: center;
   height: 100%;
 }

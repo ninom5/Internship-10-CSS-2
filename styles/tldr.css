@@ -1,0 +1,60 @@
+.tldr {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: -2px;
+}
+
+.tldr-background {
+  position: relative;
+  height: 97vh;
+  width: 100%;
+}
+.tldr-background img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+
+.tldr-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--light-text-color);
+  width: 80%;
+}
+.tldr-heading h1 {
+  font-family: var(--font-fam-2);
+  font-size: 7rem;
+  line-height: 7rem;
+  letter-spacing: -5px;
+  text-align: center;
+  width: 100%;
+}
+.tldr-heading p {
+  font-family: var(--font-fam-3);
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+#d-logo {
+  width: 200px;
+  position: absolute;
+  top: -115px;
+  right: 150px;
+}
+
+#duck {
+  width: 400px;
+  position: absolute;
+  top: 440px;
+  left: 50px;
+  z-index: 1000;
+}
