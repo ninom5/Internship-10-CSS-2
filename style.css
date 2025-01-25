@@ -8,6 +8,7 @@
 @import "./styles/gallerySection.css";
 @import "./styles/faqSection.css";
 @import "./styles/tldrSection.css";
+@import "./styles/questionsSection.css";
 
 @font-face {
   font-family: "PP Neue Montreal Mono";
