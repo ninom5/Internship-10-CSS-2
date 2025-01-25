@@ -2,11 +2,11 @@
   --font-fam: "PP Neue Montreal Mono", sans-serif;
   --font-fam-2: "PP Neue Machina", sans-serif;
   --font-fam-3: "PP Neue Montreal Mono Book", sans-serif;
-  --main-color: #f5ede1;
-  --orange-color: #ff482f;
-  --speaker-color: #e4573e;
-  --light-text-color: #eaeaea;
-  --sponsor-text-gray: #171615;
-  --sponsor-text-gray-transparent: #17161599;
+  --main-background-color: #f5ede1;
+  --redish-color: #ff482f;
+  --orange-color: #e4573e;
+  --light-gray-color: #eaeaea;
+  --almost-black-color: #171615;
+  --almost-black-color-transparent: #17161599;
   --animation-time: 30s;
 }

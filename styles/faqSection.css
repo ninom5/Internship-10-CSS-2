@@ -7,7 +7,7 @@
 
 .faq-section {
   position: relative;
-  background-color: var(--sponsor-text-gray);
+  background-color: var(--almost-black-color);
   background-image: linear-gradient(rgba(8, 95, 89, 0), rgba(8, 95, 89, 0)),
     url("../assets/images/BG texture.png");
   background-blend-mode: overlay;
@@ -27,7 +27,7 @@
   font-weight: 500;
   line-height: 144px;
   letter-spacing: -5px;
-  color: var(--light-text-color);
+  color: var(--light-gray-color);
 }
 
 .faq-content {

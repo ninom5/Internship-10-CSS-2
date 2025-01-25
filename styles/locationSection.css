@@ -30,7 +30,7 @@
   line-height: 341.49px;
   letter-spacing: -11.92px;
   text-align: center;
-  color: var(--light-text-color);
+  color: var(--light-gray-color);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -93,7 +93,7 @@
   line-height: 48px;
   letter-spacing: -1px;
   text-align: left;
-  color: var(--orange-color);
+  color: var(--redish-color);
   z-index: 6;
   padding-bottom: 400px;
   border-bottom: 4px dotted #ccc;

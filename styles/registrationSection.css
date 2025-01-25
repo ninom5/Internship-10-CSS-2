@@ -5,7 +5,7 @@
   justify-content: center;
   text-align: center;
   position: relative;
-  background-color: var(--sponsor-text-gray);
+  background-color: var(--almost-black-color);
   background-image: linear-gradient(rgba(8, 95, 89, 0), rgba(8, 95, 89, 0)),
     url("../assets/images/BG texture.png");
   background-blend-mode: overlay;
@@ -47,7 +47,7 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--light-text-color);
+  color: var(--light-gray-color);
 }
 
 #registration-image {
