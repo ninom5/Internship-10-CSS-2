@@ -1,13 +1,14 @@
-@import "./styles/registrationSection.css";
-@import "./styles/gallerySection.css";
-@import "./styles/hero.css";
+@import "./styles/heroSection.css";
 @import "./styles/duckSection.css";
 @import "./styles/lecturesSection.css";
-@import "./styles/speakers.css";
+@import "./styles/speakersSection.css";
 @import "./styles/locationSection.css";
-@import "./styles/sponsors.css";
-@import "./styles/tldr.css";
-@import "./styles/questions.css";
+@import "./styles/sponsorsSection.css";
+@import "./styles/registrationSection.css";
+@import "./styles/gallerySection.css";
+@import "./styles/faqSection.css";
+@import "./styles/tldrSection.css";
+@import "./styles/questionsSection.css";
 
 @font-face {
   font-family: "PP Neue Montreal Mono";
@@ -39,5 +40,5 @@
 body {
   /* width: 100%;
   height: 100%; */
-  background-color: var(--main-color);
+  background-color: var(--main-background-color);
 }

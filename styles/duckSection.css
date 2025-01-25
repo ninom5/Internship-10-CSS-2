@@ -5,7 +5,7 @@
   width: 100%;
   padding: 30px 50px 0 50px;
   justify-content: space-between;
-  background-color: var(--main-color);
+  background-color: var(--main-background-color);
   background-image: linear-gradient(
       rgba(245, 237, 225, 0),
       rgba(245, 237, 225, 0)
@@ -25,12 +25,12 @@
   padding-left: 90px;
 }
 .days-duck p {
-  font-family: var(--font-fam);
+  font-family: var();
   font-size: 1.5rem;
   line-height: 1.5rem;
   width: 200px;
   letter-spacing: 0.1rem;
-  color: var(--sponsor-text-gray);
+  color: var(--almost-black-color);
 }
 
 .days-duck img {
@@ -83,7 +83,7 @@
   justify-content: space-evenly;
   justify-self: center;
   padding: 12.5rem 0 3rem 0;
-  background-color: var(--main-color);
+  background-color: var(--main-background-color);
   background-image: linear-gradient(
       rgba(245, 237, 225, 0),
       rgba(245, 237, 225, 0)

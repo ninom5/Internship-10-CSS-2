@@ -24,7 +24,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: var(--light-text-color);
+  color: var(--light-gray-color);
   width: 80%;
 }
 .tldr-heading h1 {

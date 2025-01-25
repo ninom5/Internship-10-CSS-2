@@ -24,7 +24,7 @@
   font-size: 120px;
   line-height: 144px;
   letter-spacing: -5px;
-  color: var(--light-text-color);
+  color: var(--light-gray-color);
   display: flex;
   align-items: flex-end;
 }
@@ -46,7 +46,7 @@
   padding-left: 31.34px;
   padding-right: 31.34px;
   gap: 0px;
-  background-color: var(--main-color);
+  background-color: var(--main-background-color);
   background-image: linear-gradient(
       rgba(245, 237, 225, 0),
       rgba(245, 237, 225, 0)
@@ -65,7 +65,6 @@
   margin-bottom: 70px;
   cursor: pointer;
 }
-
 .picker p {
   font-family: var(--font-fam);
   font-size: 14px;
@@ -74,23 +73,19 @@
   letter-spacing: 1px;
   color: #171615;
 }
-
 .picker-date {
   display: flex;
 }
-
 .picker-date p {
   width: 160px;
   height: 48px;
   padding: 16px 24px;
   gap: 8px;
 }
-
 #picker-date-choosen {
-  border-bottom: 3px solid var(--orange-color);
-  color: var(--orange-color);
+  border-bottom: 3px solid var(--redish-color);
+  color: var(--redish-color);
 }
-
 .picker-tag {
   display: flex;
   justify-content: center;
@@ -98,14 +93,13 @@
   gap: 16px;
   padding-right: 20px;
 }
-
 #picker-tag-choosen {
   width: 76px;
   height: 48px;
   padding: 16px 24px 16px 24px;
   border: 0px 0px 3px 0px;
-  border-bottom: 3px solid var(--orange-color);
-  color: var(--orange-color);
+  border-bottom: 3px solid var(--redish-color);
+  color: var(--redish-color);
 }
 
 .list {
@@ -125,6 +119,24 @@
   width: 100%;
   border-bottom: 4px dotted #ccc;
 }
+.list-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 180px;
+  transform: translateY(-50%);
+  width: 119.01px;
+  height: 149.13px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/Speaker\ img\ 1.png");
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.list-item:hover::after {
+  opacity: 1;
+}
 
 .list-item-time {
   display: flex;
@@ -132,19 +144,17 @@
   gap: 8px;
   width: 150px;
 }
-
 .list-item-time p {
   text-align: right;
 }
 
 .typewriter {
-  font-family: var(--font-fam-3);
+  padding-bottom: 10px;
+  font-family: var(--font-fam-2);
   font-size: 14px;
   font-weight: 900;
   line-height: 16px;
   letter-spacing: 1px;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #171615;
 }
 
@@ -167,14 +177,10 @@
   padding-left: 50px;
 }
 
-.list-item-info .headline {
-  margin-bottom: 10px;
-}
-
 .label {
   color: #ffffff;
-  background-color: var(--orange-color);
-  border: 6px solid var(--orange-color);
+  background-color: var(--redish-color);
+  border: 6px solid var(--redish-color);
   border-radius: 50%;
   padding: 0 3px 0 3px;
 }
@@ -184,24 +190,4 @@
   font-size: 48px;
   font-weight: 100;
   cursor: pointer;
-}
-
-.list-item::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 180px;
-  transform: translateY(-50%);
-  width: 119.01px;
-  height: 149.13px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/images/Speaker\ img\ 1.png");
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.list-item:hover::after {
-  opacity: 1;
 }
