@@ -3,11 +3,12 @@
   flex-direction: column;
   width: 100%;
   position: relative;
+  top: -2px;
 }
 
 .tldr-background {
   position: relative;
-  height: 100vh;
+  height: 97vh;
   width: 100%;
 }
 .tldr-background img {
@@ -35,7 +36,7 @@
   width: 100%;
 }
 .tldr-heading p {
-  font-family: var(--font-fam);
+  font-family: var(--font-fam-3);
   font-size: 1rem;
   line-height: 1.1rem;
   letter-spacing: 1px;
@@ -53,15 +54,9 @@
 #duck {
   width: 400px;
   position: absolute;
-  top: 440px !important;
+  top: 440px;
   left: 50px;
   z-index: 1000;
-}
-
-#tldr-section-breaker {
-  width: 100%;
-  position: absolute;
-  bottom: -100px;
 }
 
 .questions {
@@ -80,8 +75,15 @@
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 90px;
+  /* margin-top: 90px; */
   align-items: center;
+}
+
+#tldr-section-breaker {
+  position: absolute;
+  width: 100%;
+  top: -43px;
+  height: 45px;
 }
 
 .questions h1 {
@@ -93,7 +95,7 @@
   margin-top: 300px;
 }
 .questions p {
-  font-family: var(--font-fam);
+  font-family: var(--font-fam-3);
   font-size: 0.9rem;
   line-height: 1rem;
   letter-spacing: 1px;
