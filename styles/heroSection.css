@@ -69,6 +69,7 @@ header {
   position: absolute;
   top: 45px;
   right: 25px;
+  cursor: pointer;
 }
 .hamburger-close-btn {
   display: none;
@@ -84,27 +85,41 @@ header {
   width: 100%;
   top: 0;
   right: -120%;
-  background-image: url("./mobileBackgroundHero.png");
-  height: auto;
+  background-image: url("../assets/images/mobileBackgroundHero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: whitesmoke; /*slika je prozirna pa se vidi animacija i sve iza,
+  na figmi linear gradienr ali bude i dalje prozirna tako*/
+  height: 100vh;
   position: fixed;
   z-index: 1000;
   transition: right 0.5s ease-in-out;
 }
-.hamburger-menu img {
+/* .hamburger-menu img {
+  position: absolute;
   width: 100%;
   height: 100%;
-}
-#hero-hamburger-menu {
+  object-fit: cover;
+  z-index: 1;
+} */
+/* #hero-hamburger-menu {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+  position: relative;
+  z-index: 2;
+  top: 0;
+  margin: 0;
+} */
 #hamburger-menu-heading {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 50px 20px;
+  position: relative;
+  z-index: 2;
 }
 #hamburger-menu-heading h3 {
   font-family: var(--font-fam-3);
@@ -112,13 +127,15 @@ header {
   line-height: 16px;
   letter-spacing: 1px;
   color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
 #hero-hamburger-menu {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 50px;
   text-align: left;
-  align-self: flex-start;
+  align-self: center;
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -2px;
@@ -128,7 +145,16 @@ header {
   width: 90%;
   border-bottom: 2px dotted gray;
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  padding-left: 0;
+  position: relative;
+  align-items: flex-start;
+
+  z-index: 2;
+  top: 0;
+  margin: 0;
+}
+#hero-hamburger-menu li {
+  cursor: pointer;
 }
 .hero-scrolling {
   position: relative;
@@ -321,8 +347,40 @@ header {
   #hamburger-toggle:checked ~ .hamburger-btn {
     display: none;
   }
+  #hamburger-toggle:checked ~ .hero-navigation-button {
+    /* display: none; */
+    z-index: 0;
+  }
+  #hamburger-toggle:checked ~ .hero-navigation-desc {
+    display: none;
+  }
   #hamburger-toggle:checked ~ .hamburger-close-btn {
     display: block;
+    position: fixed;
+    top: 30px;
+    z-index: 2000;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .hamburger-text-button {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #menu-register-button {
+    position: relative;
+    top: 10px;
+    margin: 30px auto;
+  }
+
+  #hamburger-desc {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .scrolling-people {
