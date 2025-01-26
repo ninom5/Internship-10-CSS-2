@@ -12,9 +12,39 @@
       <div class="hero">
         <nav class="hero-navigation">
           <p>
-            SPLIT &nbsp; // &nbsp; FESB<br />
-            23.&nbsp; - &nbsp;24. &nbsp;05. &nbsp;2024.
+            SPLIT &nbsp;// &nbsp;FESB<br />
+            23.&nbsp;-&nbsp;24.&nbsp;05.&nbsp;2024.
           </p>
+
+          <input type="checkbox" id="hamburger-toggle" style="display: none" />
+
+          <label
+            for="hamburger-toggle"
+            class="hamburger-btn"
+            aria-label="Toggle Menu"
+            >&#9776;</label
+          >
+
+          <nav class="hamburger-menu">
+            <!-- <img src="./assets/images/mobileBackgroundHero.png" alt="" /> -->
+            <div id="hamburger-menu-heading">
+              <h3>IZBORNIK</h3>
+              <label
+                for="hamburger-toggle"
+                class="hamburger-close-btn"
+                aria-label="Close Menu"
+                >&times;</label
+              >
+            </div>
+            <menu class="hero-menu" id="hero-hamburger-menu">
+              <li>KONFERENCIJA</li>
+              <li>SPEAKERI</li>
+              <li>RASPORED</li>
+              <li>SPONZORI</li>
+              <li>KONTAKT</li>
+            </menu>
+          </nav>
+
           <p>
             BESPLATNA KONFERENCIJA<br />
             ZA NOVU GENERACIJU
