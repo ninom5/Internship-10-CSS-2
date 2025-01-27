@@ -183,9 +183,7 @@
     margin-right: 140px;
     margin-bottom: 150px;
   }
-  .days-stats p:last-of-type {
-    /* margin-top: 150px; */
-  }
+
   .days-stats span {
     font-size: 72px;
     line-height: 72px;
