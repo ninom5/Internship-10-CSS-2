@@ -117,7 +117,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   /* justify-content: space-between; */
-  padding: 50px 20px;
+  padding: 50px 20px 30px 20px;
   position: relative;
   z-index: 2;
 }
@@ -133,10 +133,10 @@ header {
 #hero-hamburger-menu {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   text-align: left;
   align-self: center;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 32px;
   letter-spacing: -2px;
   font-family: var(--font-fam-2);
@@ -144,7 +144,7 @@ header {
   list-style: none;
   width: 90%;
   border-bottom: 2px dotted gray;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   padding-left: 0;
   position: relative;
   align-items: flex-start;

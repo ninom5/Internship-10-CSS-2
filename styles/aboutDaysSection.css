@@ -25,7 +25,7 @@
   padding-left: 90px;
 }
 .days-duck p {
-  font-family: var();
+  font-family: var(--font-fam);
   font-size: 1.5rem;
   line-height: 1.5rem;
   width: 200px;
@@ -130,5 +130,31 @@
   .days-stats span {
     font-size: 100px;
     line-height: 100px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .about-days {
+    padding: 30px 20px 20px 20px;
+  }
+  .days-duck {
+    display: block;
+    padding: 0;
+  }
+  .days-duck p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+  .days-info {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+  .days-info p {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    font-family: var(--font-fam-2);
   }
 }
