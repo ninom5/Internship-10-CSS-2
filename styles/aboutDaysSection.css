@@ -24,7 +24,7 @@
   width: 50%;
   padding-left: 90px;
 }
-.days-duck p {
+#aa {
   font-family: var(--font-fam);
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -72,8 +72,11 @@
   color: #ff482f;
   text-align: center;
   margin-bottom: 2rem;
+  font-family: var(--font-fam-2);
 }
-
+.mobile-duck {
+  display: none;
+}
 .days-images {
   display: flex;
   flex-direction: row;
@@ -103,10 +106,11 @@
   .days-duck {
     padding-left: 0;
   }
-  .days-duck p {
+  #aa {
     font-size: 0.8rem;
     line-height: 1rem;
-    width: 110px;
+    width: 120px;
+    height: 50px;
   }
   .days-info p {
     font-size: 1.5rem;
@@ -119,7 +123,7 @@
   }
 
   .days-stats {
-    gap: 110px;
+    gap: 80px;
   }
   .days-stats p {
     font-size: 0.9rem;
@@ -136,25 +140,70 @@
 @media (min-width: 350px) and (max-width: 800px) {
   .about-days {
     padding: 30px 20px 20px 20px;
+    flex-wrap: wrap;
   }
   .days-duck {
-    display: block;
-    padding: 0;
+    display: none;
   }
-  .days-duck p {
+  #aa {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 1px;
   }
   .days-info {
     width: 100%;
-    align-self: center;
-    justify-self: center;
+    justify-self: flex-start;
+    margin-top: 100px;
+    padding: 0;
+    order: 2;
   }
   .days-info p {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -1px;
     font-family: var(--font-fam-2);
+    width: 100%;
+  }
+  .days-stats {
+    width: 100%;
+    margin-top: 50px;
+    /* gap: 120px; */
+    gap: 0;
+    height: auto;
+  }
+  .days-stats p {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    width: 25%;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .days-stats p:first-of-type {
+    margin-right: 140px;
+    margin-bottom: 150px;
+  }
+  .days-stats p:last-of-type {
+    /* margin-top: 150px; */
+  }
+  .days-stats span {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -5px;
+  }
+
+  .mobile-duck {
+    display: block;
+    position: absolute;
+    bottom: -260px;
+    right: 0;
+  }
+  .days-images {
+    padding: 0;
+    margin-top: 300px;
+  }
+  .days-images img {
+    width: 40%;
+    margin-bottom: 30px;
   }
 }
