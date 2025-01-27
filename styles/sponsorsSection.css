@@ -289,3 +289,33 @@
     opacity: 0;
   }
 }
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .sponsors-section-heading {
+    padding: 40px;
+  }
+  .sponsors-section-heading p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.54px;
+  }
+  .sponsors-section-heading h2 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    width: 100%;
+    text-align: center;
+  }
+  .sponsors-section-heading h2 br {
+    display: none;
+  }
+
+  #agency {
+    top: 200px;
+    left: 30px;
+  }
+  #blank {
+    top: 200px;
+    right: 30px;
+  }
+}
