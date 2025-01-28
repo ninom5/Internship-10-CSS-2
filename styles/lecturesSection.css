@@ -33,6 +33,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+  object-fit: cover;
   transform: translateX(-50%);
   width: 100%;
   height: 45px;
@@ -41,10 +42,10 @@
 
 .days-lectures-content {
   width: 100%;
-  height: 1158.24px;
   top: 3854px;
   padding-left: 31.34px;
   padding-right: 31.34px;
+  padding-bottom: 50px;
   background-color: var(--main-background-color);
   background-image: linear-gradient(
       rgba(245, 237, 225, 0),
@@ -211,12 +212,17 @@
 }
 
 @media (max-width: 850px) {
+  .picker {
+    margin-bottom: 30px;
+  }
+
   .picker-tag {
     display: none;
   }
 
   .typewriter {
     font-size: 12px;
+    line-height: 2;
   }
 
   .list-item-info p {
@@ -224,17 +230,17 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .days-lectures-heading {
     height: 111vh;
   }
 
   .days-lectures-heading .main-image {
-    width: 382px;
+    width: 100%;
     height: 749px;
   }
   .days-lectures-heading .main-image img {
-    width: 382px;
+    width: 100%;
     height: 749px;
     overflow: hidden;
   }
@@ -255,8 +261,7 @@
 
   .days-lectures-content {
     width: 100%;
-    height: 1158.24px;
-    padding: 16px;
+    padding: 16px 16px 50px 16px;
     background-color: #fffefe;
   }
 
