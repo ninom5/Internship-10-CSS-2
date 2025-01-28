@@ -257,10 +257,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 50px;
-  width: 92%;
+  margin: 0;
+  width: 100%;
   height: 140px;
-  border-bottom: 3px dotted #ccc;
+  position: relative;
 }
 
 .media-sponsors,
@@ -270,6 +270,46 @@
   line-height: 1.6rem;
   letter-spacing: 1px;
   color: var(--almost-black-color-transparent);
+}
+
+.silver-sponsors-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  position: relative;
+}
+.logo-field::before,
+.logo-field::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle, #ccc 50%, transparent 51%) 0 0 / 6px 6px;
+}
+
+.logo-field::after {
+  height: 5px;
+  width: calc(100% - 27px);
+  left: 10px;
+  bottom: 0;
+}
+
+.logo-field::before {
+  width: 5px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.silver-sponsors-logos .logo-field:nth-child(4n)::before {
+  display: none;
+}
+
+.silver-sponsors-logos .logo-field:nth-child(n + 9)::after {
+  display: none;
+}
+
+.logo-field:last-child::before {
+  display: none;
 }
 
 @keyframes reveal-hide-logo {
@@ -379,5 +419,57 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.5px;
+  }
+
+  .silver-sponsors-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+  }
+
+  .logo-field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+  }
+
+  .logo-field::before,
+  .logo-field::after {
+    content: "";
+    position: absolute;
+    background: radial-gradient(circle, #ccc 50%, transparent 51%) 0 0 / 6px 6px;
+  }
+
+  .logo-field::before {
+    width: 3px;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  .logo-field::after {
+    height: 3px;
+    width: calc(100% - 20px);
+    left: 10px;
+    bottom: 0;
+  }
+
+  .silver-sponsors-logos .logo-field:nth-child(2n)::before {
+    display: none;
+  }
+
+  .silver-sponsors-logos .logo-field:nth-last-child(-n + 2)::after {
+    display: none;
+  }
+
+  #travesoft {
+    grid-row: 2;
+  }
+  #placeholder {
+    display: none;
   }
 }
