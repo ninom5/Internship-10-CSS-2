@@ -103,15 +103,7 @@ header {
   object-fit: cover;
   z-index: 1;
 } */
-/* #hero-hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  z-index: 2;
-  top: 0;
-  margin: 0;
-} */
+
 #hamburger-menu-heading {
   display: flex;
   flex-direction: row;
@@ -140,7 +132,7 @@ header {
   line-height: 32px;
   letter-spacing: -2px;
   font-family: var(--font-fam-2);
-  color: #eaeaea;
+  color: var(--light-gray-color);
   list-style: none;
   width: 90%;
   border-bottom: 2px dotted gray;
@@ -148,7 +140,6 @@ header {
   padding-left: 0;
   position: relative;
   align-items: flex-start;
-
   z-index: 2;
   top: 0;
   margin: 0;
@@ -159,7 +150,7 @@ header {
 .hero-scrolling {
   position: relative;
   /* overflow: hidden; */
-  width: 100vw;
+  width: 100vw; /*200%*/
   height: 100%;
 }
 .hero-scrolling-content {
@@ -395,7 +386,7 @@ header {
   .hero-menu {
     display: none;
   }
-  .hero-scrolling-content {
+  /* .hero-scrolling-content {
     animation: scroll 10s linear infinite;
-  }
+  } */
 }
