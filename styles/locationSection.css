@@ -16,6 +16,7 @@
   height: 45px;
   top: -45px;
   position: absolute;
+  object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
 }
