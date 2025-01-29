@@ -8,11 +8,13 @@
 
 .tldr-background {
   position: relative;
-  height: 97vh;
+  min-height: 1000px;
   width: 100%;
 }
 .tldr-background img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   height: auto;
   position: absolute;
   top: 0;
@@ -54,7 +56,104 @@
 #duck {
   width: 400px;
   position: absolute;
-  top: 440px;
+  top: 650px;
   left: 50px;
   z-index: 1000;
+}
+
+#background-mobile {
+  display: none;
+}
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .tldr-background {
+    min-height: 700px;
+  }
+  #background-mobile {
+    display: block;
+  }
+  .tldr-background img:first-of-type {
+    display: none;
+  }
+  #d-logo {
+    width: 130px;
+    top: -70px;
+    right: 50px;
+    z-index: 2000;
+  }
+
+  .tldr-heading {
+    top: 20%;
+    transform: translate(-50%, 0);
+  }
+
+  .tldr-heading h1 {
+    font-size: 64px;
+    line-height: 62px;
+    letter-spacing: -3px;
+  }
+  .tldr-heading p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+
+  #duck {
+    width: 300px;
+    top: 450px;
+    left: -80px;
+  }
+  #background-mobile {
+    height: 100%;
+  }
+
+  @media (min-width: 550px) {
+    .tldr-heading h1 {
+      font-size: 70px;
+      line-height: 68px;
+      letter-spacing: -1px;
+    }
+    .tldr-heading p {
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0px;
+    }
+  }
+}
+
+@media (min-width: 800.1px) and (max-width: 1500px) {
+  .tldr-background {
+    min-height: 700px;
+  }
+  .tldr-background img:first-of-type {
+    height: 700px;
+  }
+
+  #d-logo {
+    width: 150px;
+    top: -70px;
+    right: 50px;
+    z-index: 2000;
+  }
+  #duck {
+    width: 350px;
+    top: 400px;
+    left: -80px;
+  }
+
+  .tldr-heading {
+    top: 20%;
+    transform: translate(-50%, 0);
+  }
+
+  .tldr-heading h1 {
+    font-size: 70px;
+    line-height: 65px;
+    letter-spacing: -3px;
+  }
+  .tldr-heading p {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
 }
