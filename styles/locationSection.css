@@ -142,7 +142,7 @@
   width: 621px;
   height: 96px;
   top: 2273px;
-  left: 480px;
+  left: 32%;
   gap: 24px;
 }
 
@@ -200,6 +200,93 @@
   color: white;
   opacity: 20%;
   overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .section-location {
+    height: 2400px;
+  }
+
+  #location-headline {
+    top: 120px;
+  }
+
+  #background-cover-image {
+    height: 500px;
+    top: 1225px;
+  }
+  #background-texture {
+    height: 500px;
+    top: 1225px;
+  }
+  #cover-image {
+    height: 700px;
+    top: 1030px;
+  }
+
+  #stamp1 {
+    top: 550px;
+    width: 350px;
+    height: 450px;
+  }
+  #stamp2 {
+    top: 998px;
+    width: 350px;
+    height: 450px;
+  }
+  #stamp-headline {
+    width: 250px;
+    top: 1040px;
+    padding: 0px 0px 270px 0px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  #stamp-adress {
+    top: 1340px;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .second-breaker {
+    top: 1700px;
+  }
+
+  #location-text1 {
+    top: 1780px;
+    left: 20px;
+  }
+  #label-text2-container {
+    width: 100%;
+    top: 1780px;
+    left: 0;
+  }
+  #location-label {
+    position: absolute;
+    top: -10px;
+    left: 80%;
+    width: 55px;
+  }
+  #location-text2 {
+    top: 20px;
+    padding: 10px;
+    width: 450px;
+    font-size: 18px;
+  }
+
+  #dotted-breaker {
+    top: 2000px;
+  }
+  #visual-date {
+    top: 2050px;
+    letter-spacing: 1.3px;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-location {
+    height: 2280px;
+  }
 }
 
 @media (min-width: 350px) and (max-width: 420px) {
@@ -279,28 +366,21 @@
 
   #location-text1 {
     top: 1380px;
-    left: 20px;
   }
 
   #label-text2-container {
     position: absolute;
-    width: 100%;
     height: 496px;
     top: 1400px;
     left: 0;
   }
   #location-label {
-    width: 55px;
-    position: absolute;
     top: -25px;
-    left: 80%;
   }
   #location-text2 {
     position: absolute;
-    top: 20px;
     width: 326.62px;
     padding: 0;
-    font-size: 18px;
   }
 
   #dotted-breaker {
