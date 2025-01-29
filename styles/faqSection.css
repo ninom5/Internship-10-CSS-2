@@ -127,6 +127,7 @@
     max-width: 220px;
   }
   #first-question p {
+    max-width: 600px;
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
