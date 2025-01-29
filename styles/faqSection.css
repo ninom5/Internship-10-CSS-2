@@ -55,6 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-family: var(--font-fam-3);
 }
 
 .faq-question h3,
