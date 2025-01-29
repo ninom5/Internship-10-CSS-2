@@ -39,6 +39,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  /* position: fixed;
+  z-index: 2000; */
 }
 .hero-navigation p {
   font-size: 1.4rem;
@@ -63,10 +65,94 @@ header {
   letter-spacing: 1.5px;
 }
 
+.hamburger-btn {
+  display: none;
+  font-size: 24px;
+  position: absolute;
+  top: 45px;
+  right: 25px;
+  cursor: pointer;
+}
+.hamburger-close-btn {
+  display: none;
+}
+#hamburger-toggle {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  right: -120%;
+  background-image: url("../assets/images/mobileBackgroundHero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: whitesmoke; /*slika je prozirna pa se vidi animacija i sve iza,
+  na figmi linear gradienr ali bude i dalje prozirna tako*/
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  transition: right 0.5s ease-in-out;
+}
+/* .hamburger-menu img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+} */
+
+#hamburger-menu-heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
+  padding: 50px 20px 30px 20px;
+  position: relative;
+  z-index: 2;
+}
+#hamburger-menu-heading h3 {
+  font-family: var(--font-fam-3);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+#hero-hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+  align-self: center;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  font-family: var(--font-fam-2);
+  color: var(--light-gray-color);
+  list-style: none;
+  width: 90%;
+  border-bottom: 4px dotted gray;
+  padding-bottom: 35px;
+  padding-left: 0;
+  position: relative;
+  align-items: flex-start;
+  z-index: 2;
+  top: 0;
+  margin: 0;
+}
+#hero-hamburger-menu li {
+  cursor: pointer;
+}
 .hero-scrolling {
   position: relative;
   /* overflow: hidden; */
-  width: 100vw;
+  width: 100vw; /*200%*/
   height: 100%;
 }
 .hero-scrolling-content {
@@ -159,7 +245,165 @@ header {
   line-height: 1.3rem;
 }
 
-@media (min-width: 1100px) and (max-width: 1600px) {
+@media (min-width: 350px) and (max-width: 800px) {
+  .hero-navigation {
+    flex-direction: column;
+    /* align-items: flex-start; */
+  }
+  .hero-navigation p {
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    text-align: left;
+    align-self: flex-start;
+    padding: 0 !important;
+  }
+  .hero {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-image: url("../assets/images/mobileBackgroundHero.png");
+  }
+  .hero-navigation p:first-of-type {
+    order: 1;
+    margin-top: 20px;
+    font-family: var(--font-fam-3);
+  }
+  .hero-navigation-button {
+    order: 2;
+    width: 90%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 100px;
+    z-index: 1000;
+    font-family: var(--font-fam-3);
+  }
+  .hero-navigation p:nth-of-type(2) {
+    order: 3;
+    text-align: center;
+    align-self: center;
+    position: relative;
+    bottom: -600px;
+    z-index: 1000;
+    font-family: var(--font-fam-3);
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  #hamburger-toggle:checked ~ .hamburger-menu {
+    right: 0;
+  }
+  #hamburger-toggle:checked ~ .hamburger-btn {
+    display: none;
+  }
+  #hamburger-toggle:checked ~ .hero-navigation-button {
+    /* display: none; */
+    z-index: 0;
+  }
+  #hamburger-toggle:checked ~ .hero-navigation-desc {
+    display: none;
+  }
+  #hamburger-toggle:checked ~ .hamburger-close-btn {
+    display: block;
+    position: fixed;
+    top: 30px;
+    z-index: 2000;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .hamburger-text-button {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #menu-register-button {
+    position: relative;
+    top: 10px;
+    margin: 30px auto;
+  }
+
+  #hamburger-desc {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .scrolling-people {
+    margin-bottom: 70px;
+  }
+  .scrolling-text h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -5px;
+  }
+
+  .hero-menu {
+    display: none;
+  }
+  /* .hero-scrolling-content {
+    animation: scroll 10s linear infinite;
+  } */
+}
+
+@media (min-width: 800.1px) and (max-width: 1100px) {
+  .hero {
+    margin: 30px;
+    width: calc(100% - 60px);
+    transition: 2s ease-in-out;
+  }
+  .hero-navigation {
+    padding: 20px;
+  }
+  .hero-navigation p {
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 1px;
+  }
+  .hero-navigation p:first-child {
+    padding-left: 10px;
+  }
+  .hero-navigation-button {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+  }
+  .hero-menu {
+    padding: 25px 15px;
+  }
+  .hero-menu li a {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .scrolling-text {
+    margin-bottom: 0;
+  }
+  .scrolling-text h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  .scrolling-text img {
+    width: 100px;
+    height: 100px;
+  }
+  .scrolling-people img {
+    height: 90%;
+    margin-top: 77px;
+  }
+}
+
+@media (min-width: 1100.1px) and (max-width: 1600px) {
   .hero {
     align-self: center;
     justify-self: center;

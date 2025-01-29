@@ -12,10 +12,51 @@
       <div class="hero">
         <nav class="hero-navigation">
           <p>
-            SPLIT &nbsp; // &nbsp; FESB<br />
-            23.&nbsp; - &nbsp;24. &nbsp;05. &nbsp;2024.
+            SPLIT &nbsp;// &nbsp;FESB<br />
+            23.&nbsp;-&nbsp;24.&nbsp;05.&nbsp;2024.
           </p>
-          <p>
+
+          <input type="checkbox" id="hamburger-toggle" style="display: none" />
+
+          <label
+            for="hamburger-toggle"
+            class="hamburger-btn"
+            aria-label="Toggle Menu"
+            >&#9776;</label
+          >
+
+          <label
+            for="hamburger-toggle"
+            class="hamburger-close-btn"
+            aria-label="Close Menu"
+            >&times;</label
+          >
+          <nav class="hamburger-menu">
+            <!-- <img src="./assets/images/mobileBackgroundHero.png" alt="" /> -->
+            <div id="hamburger-menu-heading">
+              <h3>IZBORNIK</h3>
+            </div>
+            <menu class="hero-menu" id="hero-hamburger-menu">
+              <li>KONFERENCIJA</li>
+              <li>SPEAKERI</li>
+              <li>RASPORED</li>
+              <li>SPONZORI</li>
+              <li>KONTAKT</li>
+            </menu>
+
+            <div class="hamburger-text-button">
+              <button class="hero-navigation-button" id="menu-register-button">
+                REGISTRIRAJ SE
+              </button>
+
+              <p id="hamburger-desc">
+                BESPLATNA KONFERENCIJA<br />
+                ZA NOVU GENERACIJU
+              </p>
+            </div>
+          </nav>
+
+          <p class="hero-navigation-desc">
             BESPLATNA KONFERENCIJA<br />
             ZA NOVU GENERACIJU
           </p>
@@ -74,8 +115,8 @@
 
     <main>
       <section class="about-days">
+        <p id="subheader">DEV, &nbsp; DESIGN &TECH KONFA</p>
         <div class="days-duck">
-          <p>DEV, &nbsp; DESIGN & TECH KONFA</p>
           <img src="./assets/images/Paticka scroll area.png" alt="duck" />
         </div>
 
@@ -101,6 +142,11 @@
               <span>105</span><br />
               PREDAVANJA
             </p>
+            <img
+              src="./assets/images/mobile duck.png"
+              alt=""
+              class="mobile-duck"
+            />
           </div>
         </div>
       </section>
