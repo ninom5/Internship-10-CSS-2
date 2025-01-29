@@ -154,3 +154,25 @@
     opacity: 40%;
   }
 }
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .section-speakers-breaker {
+    height: 20px;
+    width: 100%;
+  }
+  .speakers-heading {
+    font-size: 14px;
+    line-height: 1rem;
+    color: rgba(255, 255, 255, 70%);
+  }
+  .speakers-heading h1 {
+    font-size: 48px;
+    line-height: 80px;
+    letter-spacing: -3px;
+  }
+  .section-speakers-images {
+  }
+  .speaker-images-column {
+    width: 45%;
+  }
+}
