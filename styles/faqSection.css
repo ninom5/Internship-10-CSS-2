@@ -79,7 +79,6 @@
   line-height: 22px;
   opacity: 50%;
 }
-
 .faq-question p:last-child {
   align-self: baseline;
   font-family: var(--font-fam-2);
@@ -132,8 +131,6 @@
     font-weight: 500;
     line-height: 22px;
   }
-
-  /**/
   .faq-question > p:last-of-type {
     display: none;
   }
