@@ -34,6 +34,11 @@
   height: 45px;
   top: 657px;
   filter: brightness(200%) saturate(0%);
+  object-fit: cover;
+}
+.gallery-cover img:nth-of-type(5),
+.gallery-cover img:nth-of-type(6) {
+  display: none;
 }
 
 .gallery-cover h1,
@@ -41,7 +46,7 @@
   position: absolute;
   z-index: 5;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-fam-3);
 }
 .gallery-cover h1 {
   top: 355px;
@@ -53,22 +58,17 @@
   line-height: 144px;
   letter-spacing: -5;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: var(--light-gray-color);
 }
 .gallery-cover p {
   top: 600px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: var(--font-fam-3);
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 1px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .gallery-content {
@@ -82,6 +82,7 @@
   position: absolute;
   width: 100%;
   height: 65px;
+  object-fit: cover;
 }
 #black-breaker {
   top: 70px;
@@ -116,6 +117,7 @@
 }
 
 .quote-text {
+  max-width: 630px;
   font-family: var(--font-fam-2);
   font-size: clamp(1rem, 4vw, 1.2rem);
   line-height: 1.5;
@@ -135,6 +137,9 @@
   gap: 65px;
   align-items: flex-start;
 }
+#third-quote .quote-text {
+  width: 583px;
+}
 #third-element {
   display: flex;
   flex-direction: column;
@@ -152,4 +157,163 @@
   text-align: left;
   color: var(--almost-black-color);
   opacity: 60%;
+}
+
+@media (max-width: 1100px) {
+  #black-breaker {
+    top: 90px;
+    transform: rotate(0deg);
+  }
+  #beige-breaker {
+    top: 245px;
+    transform: rotate(0deg);
+  }
+
+  .quote {
+    padding: 20px 20px 0 40px;
+    gap: 175px;
+  }
+
+  .quote-text {
+    height: 123px;
+  }
+  #white-quote .quote-text {
+    padding-top: 20px;
+  }
+  #third-quote {
+    gap: 20px;
+  }
+  #third-element {
+    width: 190px;
+  }
+  #third-element img {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .gallery-section {
+    min-width: 350px;
+    height: 440px;
+  }
+
+  .gallery-cover {
+    min-width: 100%;
+    height: 555px;
+    overflow: hidden;
+  }
+
+  .gallery-cover img:first-of-type {
+    display: none;
+  }
+  .gallery-cover img:nth-of-type(2) {
+    width: 800px;
+    height: 440px;
+    left: -100px;
+  }
+  .gallery-cover img:nth-of-type(3) {
+    top: 36px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+  .gallery-cover img:nth-of-type(4) {
+    top: 400px;
+  }
+  .gallery-cover img:nth-of-type(5) {
+    display: block;
+    width: 100%;
+    height: 580px;
+  }
+
+  .gallery-cover h1 {
+    top: 220px;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 87.46px;
+    letter-spacing: -3.27974271774292px;
+  }
+  .gallery-cover p {
+    top: 350px;
+    width: 217px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  #white-quote img,
+  #black-quote img {
+    display: none;
+  }
+
+  .quote {
+    padding: 0 20px 0 20px;
+  }
+  .quote-text {
+    padding-left: 0;
+    width: 100%;
+    height: 153px;
+    line-height: 26px;
+    letter-spacing: -1px;
+    border-left: none;
+  }
+  #white-quote .quote-text {
+    padding-top: 20px;
+  }
+
+  #third-quote {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  #third-quote .quote-text {
+    width: 100%;
+    height: 220px;
+    border-bottom: 4px dotted #ccc;
+    padding-bottom: 30px;
+  }
+
+  #third-element {
+    flex-direction: row;
+    width: 100%;
+  }
+  #third-element img {
+    width: 17.66px;
+    height: 16px;
+  }
+  #third-element p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .gallery-section {
+    height: 425px;
+  }
+
+  .gallery-cover {
+    height: 430px;
+  }
+
+  .gallery-cover img:nth-of-type(2) {
+    height: 430px;
+  }
+
+  .gallery-cover img:nth-of-type(6) {
+    display: block;
+    width: 800px;
+    height: 500px;
+    right: -100px;
+    bottom: 35px;
+    opacity: 30%;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
 }
