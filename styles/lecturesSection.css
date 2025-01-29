@@ -257,7 +257,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 600px) {
   .days-lectures-heading {
     height: 749px;
   }
