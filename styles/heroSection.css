@@ -245,6 +245,90 @@ header {
   line-height: 1.3rem;
 }
 
+@media (min-width: 1100.1px) and (max-width: 1600px) {
+  .hero {
+    align-self: center;
+    justify-self: center;
+    margin: 30px;
+    width: 95vw;
+    height: 95vh;
+  }
+  .hero-navigation {
+    padding: 25px 0;
+  }
+  .hero-navigation p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+  .hero-navigation-button {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    padding: 14px 16px;
+  }
+
+  .scrolling-text h1 {
+    font-size: 6rem;
+    align-self: center;
+  }
+  .scrolling-text img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-menu li a {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 800.1px) and (max-width: 1100px) {
+  .hero {
+    margin: 30px;
+    width: calc(100% - 60px);
+    transition: 2s ease-in-out;
+  }
+  .hero-navigation {
+    padding: 20px;
+  }
+  .hero-navigation p {
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 1px;
+  }
+  .hero-navigation p:first-child {
+    padding-left: 10px;
+  }
+  .hero-navigation-button {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+  }
+  .hero-menu {
+    padding: 25px 15px;
+  }
+  .hero-menu li a {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .scrolling-text {
+    margin-bottom: 0;
+  }
+  .scrolling-text h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  .scrolling-text img {
+    width: 100px;
+    height: 100px;
+  }
+  .scrolling-people img {
+    height: 90%;
+    margin-top: 77px;
+  }
+}
+
 @media (min-width: 350px) and (max-width: 800px) {
   .hero-navigation {
     flex-direction: column;
@@ -353,88 +437,4 @@ header {
   /* .hero-scrolling-content {
     animation: scroll 10s linear infinite;
   } */
-}
-
-@media (min-width: 800.1px) and (max-width: 1100px) {
-  .hero {
-    margin: 30px;
-    width: calc(100% - 60px);
-    transition: 2s ease-in-out;
-  }
-  .hero-navigation {
-    padding: 20px;
-  }
-  .hero-navigation p {
-    font-size: 14px;
-    line-height: 1rem;
-    letter-spacing: 1px;
-  }
-  .hero-navigation p:first-child {
-    padding-left: 10px;
-  }
-  .hero-navigation-button {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1rem;
-    letter-spacing: 1px;
-    padding: 1rem;
-  }
-  .hero-menu {
-    padding: 25px 15px;
-  }
-  .hero-menu li a {
-    font-size: 16px;
-    line-height: 16px;
-  }
-  .scrolling-text {
-    margin-bottom: 0;
-  }
-  .scrolling-text h1 {
-    font-size: 6rem;
-    line-height: 7rem;
-  }
-  .scrolling-text img {
-    width: 100px;
-    height: 100px;
-  }
-  .scrolling-people img {
-    height: 90%;
-    margin-top: 77px;
-  }
-}
-
-@media (min-width: 1100.1px) and (max-width: 1600px) {
-  .hero {
-    align-self: center;
-    justify-self: center;
-    margin: 30px;
-    width: 95vw;
-    height: 95vh;
-  }
-  .hero-navigation {
-    padding: 25px 0;
-  }
-  .hero-navigation p {
-    font-size: 0.9rem;
-    line-height: 1rem;
-  }
-  .hero-navigation-button {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
-    padding: 14px 16px;
-  }
-
-  .scrolling-text h1 {
-    font-size: 6rem;
-    align-self: center;
-  }
-  .scrolling-text img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .hero-menu li a {
-    font-size: 0.9rem;
-    line-height: 1rem;
-  }
 }
