@@ -4,7 +4,6 @@
   background-color: #085f59;
   background-image: linear-gradient(rgba(8, 95, 89, 0), rgba(8, 95, 89, 0)),
     url("../assets/images/BG texture.png");
-
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,6 +15,7 @@
   height: 45px;
   top: -45px;
   position: absolute;
+  object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -50,6 +50,10 @@
   z-index: 3;
 }
 
+.mobile-location-cover {
+  display: none;
+}
+
 #background-cover-image {
   position: absolute;
   max-width: 100%;
@@ -70,7 +74,7 @@
   width: 100%;
   height: 945.16px;
   top: 1276px;
-  z-index: 4;
+  z-index: 7;
 }
 
 .second-breaker {
@@ -78,7 +82,7 @@
   max-width: 100%;
   height: 45px;
   top: 2196px;
-  z-index: 5;
+  z-index: 8;
 }
 
 #stamp-headline {
@@ -138,7 +142,7 @@
   width: 621px;
   height: 96px;
   top: 2273px;
-  left: 480px;
+  left: 32%;
   gap: 24px;
 }
 
@@ -159,7 +163,7 @@
   width: 90%;
   height: auto;
   font-family: var(--font-fam-2);
-  font-size: 1.45vw;
+  font-size: 24px;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -1px;
@@ -179,7 +183,9 @@
   width: 95%;
   height: 1px;
 }
-
+#split-3-stamp {
+  display: none;
+}
 #visual-date {
   position: absolute;
   width: 100%;
@@ -194,4 +200,208 @@
   color: white;
   opacity: 20%;
   overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .section-location {
+    height: 2400px;
+  }
+
+  #location-headline {
+    top: 120px;
+  }
+
+  #background-cover-image {
+    height: 500px;
+    top: 1225px;
+  }
+  #background-texture {
+    height: 500px;
+    top: 1225px;
+  }
+  #cover-image {
+    height: 700px;
+    top: 1030px;
+  }
+
+  #stamp1 {
+    top: 550px;
+    width: 350px;
+    height: 450px;
+  }
+  #stamp2 {
+    top: 998px;
+    width: 350px;
+    height: 450px;
+  }
+  #stamp-headline {
+    width: 250px;
+    top: 1040px;
+    padding: 0px 0px 270px 0px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  #stamp-adress {
+    top: 1340px;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .second-breaker {
+    top: 1700px;
+  }
+
+  #location-text1 {
+    top: 1780px;
+    left: 20px;
+  }
+  #label-text2-container {
+    width: 100%;
+    top: 1780px;
+    left: 0;
+  }
+  #location-label {
+    position: absolute;
+    top: -10px;
+    left: 80%;
+    width: 55px;
+  }
+  #location-text2 {
+    top: 20px;
+    padding: 20px;
+    width: 450px;
+    font-size: 18px;
+  }
+
+  #dotted-breaker {
+    top: 2000px;
+  }
+  #visual-date {
+    top: 2050px;
+    letter-spacing: 1.3px;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-location {
+    height: 2280px;
+  }
+
+  #location-headline {
+    letter-spacing: -5px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 420px) {
+  .section-location {
+    height: 1735px;
+    background-image: none;
+  }
+
+  #location-headline {
+    width: 340px;
+    height: 88px;
+    top: 10px;
+    font-size: 69.97px;
+    letter-spacing: -3.3px;
+    z-index: 1;
+  }
+
+  #stamp1 {
+    top: 350px;
+    width: 250px;
+    height: 350px;
+    z-index: 1;
+  }
+  #stamp2 {
+    top: 698px;
+    width: 250px;
+    height: 350px;
+  }
+
+  #background-cover-image,
+  #background-texture,
+  #cover-image {
+    display: none;
+  }
+  .mobile-location-cover {
+    display: block;
+  }
+  #mobile-background-cover-image {
+    position: absolute;
+    width: 100%;
+    height: 2150px;
+    top: 0;
+    mix-blend-mode: overlay;
+    background-image: url("../assets/images/kampus-most.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+  }
+  #mobile-background-cover-image-overlay {
+    position: absolute;
+    width: 100%;
+    top: 1085px;
+  }
+
+  #stamp-headline {
+    width: 200px;
+    top: 730px;
+    padding: 0px 0px 220px 10px;
+    border-bottom: 3px dotted #ccc;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+  }
+  #stamp-adress {
+    top: 970px;
+    padding-left: 70px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+  }
+  .second-breaker {
+    height: 70px;
+    top: 1295px;
+  }
+
+  #location-text1 {
+    top: 1380px;
+  }
+
+  #label-text2-container {
+    position: absolute;
+    height: 496px;
+    top: 1400px;
+    left: 0;
+  }
+  #location-label {
+    top: -25px;
+  }
+  #location-text2 {
+    position: absolute;
+    width: 326.62px;
+    padding: 0;
+  }
+
+  #dotted-breaker {
+    top: 1580px;
+    left: 50%;
+    width: 90%;
+  }
+  #split-3-stamp {
+    display: block;
+    position: absolute;
+    top: 1630px;
+    left: 40%;
+    width: 65px;
+  }
+  #visual-date {
+    top: 1620px;
+    font-size: 65px;
+    letter-spacing: 1.3px;
+  }
 }
