@@ -35,7 +35,7 @@
   font-size: 14px;
   line-height: 1rem;
   letter-spacing: 1px;
-  font-family: var(--font-fam);
+  font-family: var(--font-fam-3);
   animation: fade-in-speakers linear;
   animation-timeline: view();
 }

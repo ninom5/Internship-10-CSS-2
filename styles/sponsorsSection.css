@@ -35,7 +35,7 @@
   padding-top: 200px;
 }
 .sponsors-section-heading p {
-  font-family: var(--font-fam);
+  font-family: var(--font-fam-3);
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 1px;
@@ -161,6 +161,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 10px;
 }
 
 .sponsor-card {
@@ -220,56 +221,82 @@
 .bronze-sponsors-logos,
 .media-sponsors-logos,
 .pf-logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  justify-content: center;
   width: 100%;
   padding: 20px;
-  flex-direction: row;
-  height: auto;
-  justify-content: center;
+  position: relative;
 }
 
-.silver-sponsors-logos-column,
-.bronze-sponsors-logos-column,
-.media-sponsors-column,
-.pf-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-right: 3px dotted #ccc;
-  width: calc((100% - 40px) / 4);
+.silver-sponsors-logos {
+  grid-template-rows: repeat(3, auto);
 }
-
-.silver-sponsors-logos-column:last-of-type,
-.bronze-sponsors-logos-column:last-of-type,
-.media-sponsors-column:last-of-type,
-.pf-column:last-of-type {
-  border-right: none;
+.bronze-sponsors-logos {
+  grid-template-rows: repeat(2, auto);
 }
-
-.silver-sponsors-logos-column:nth-of-type(-n + 2) .logo-field:last-of-type,
-.bronze-sponsors-logos-column .logo-field:last-of-type,
-.media-sponsors-column:nth-of-type(-n + 2) .logo-field:last-of-type,
-.pf-column .logo-field:last-of-type {
-  border-bottom: none;
+.media-sponsors-logos {
+  grid-template-rows: repeat(2, auto);
 }
 
 .logo-field {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 50px;
-  width: 92%;
+  margin: 0;
+  width: 100%;
   height: 140px;
-  border-bottom: 3px dotted #ccc;
+  position: relative;
 }
 
-.media-sponsors,
+.media-sponsors p,
 .partners-friends p {
   font-family: var(--font-fam);
   font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: 1px;
   color: var(--almost-black-color-transparent);
+}
+
+.logo-field::before,
+.logo-field::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle, #ccc 45%, transparent 46%) 0 0 / 6px 6px;
+}
+
+.logo-field::after {
+  height: 5px;
+  width: calc(100% - 27px);
+  left: 10px;
+  bottom: 0;
+}
+
+.logo-field::before {
+  width: 5px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.silver-sponsors-logos .logo-field:nth-child(4n)::before,
+.bronze-sponsors-logos .logo-field:nth-child(4n)::before,
+.media-sponsors-logos .logo-field:nth-child(4n)::before {
+  display: none;
+}
+
+.silver-sponsors-logos .logo-field:nth-child(n + 9)::after,
+.bronze-sponsors-logos .logo-field:nth-child(n + 5)::after,
+.media-sponsors-logos .logo-field:nth-child(n + 5)::after {
+  display: none;
+}
+
+.pf-logos .logo-field:nth-child(n)::after {
+  display: none;
+}
+
+.logo-field:last-child::before {
+  display: none;
 }
 
 @keyframes reveal-hide-logo {
@@ -287,5 +314,307 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .sponsors-section {
+    background-size: contain;
+  }
+  .sponsors-section-breaker {
+    object-fit: cover;
+  }
+  .sponsors-section-heading {
+    padding: 40px;
+  }
+  .sponsors-section-heading p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.54px;
+  }
+  .sponsors-section-heading h2 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    width: 100%;
+    text-align: center;
+  }
+  .sponsors-section-heading h2 br {
+    display: none;
+  }
+
+  #agency {
+    top: 200px;
+    left: 30px;
+    width: 25px;
+  }
+  #blank {
+    top: 190px;
+    right: 30px;
+    width: 70px;
+  }
+  .sponsors-section-logos {
+    width: 100%;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(7, 50px);
+    gap: 0;
+    padding: 10px;
+  }
+  .sponsors-section-logos img {
+    width: 40px;
+  }
+  .neogov {
+    grid-row: 3;
+    width: 50px;
+  }
+  .blank {
+    grid-row: 7;
+    grid-column: 2;
+    width: 50px !important;
+  }
+  .photomath {
+    grid-row: 1;
+    grid-column: 5;
+    width: 50px !important;
+  }
+  .agilno {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .agilno2 {
+    grid-column: 6;
+    grid-row: 3;
+  }
+  .feg {
+    grid-column: 4;
+    grid-row: 4;
+    width: 30px !important;
+  }
+  .infobip {
+    grid-column: 7;
+    grid-row: 6;
+  }
+
+  .sponsor-card {
+    margin-bottom: 64px;
+    gap: 24px;
+  }
+  .sponsor-card h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  #positions {
+    padding-top: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .silver-sponsors-logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+  }
+  .bronze-sponsors-logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+  }
+  .media-sponsors-logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+  }
+  .pf-logos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+  }
+
+  .logo-field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+  }
+
+  .logo-field::before,
+  .logo-field::after {
+    background-size: 4px 4px;
+  }
+
+  .logo-field::before {
+    width: 3px;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  .logo-field::after {
+    height: 3px;
+    width: calc(100% - 20px);
+    left: 10px;
+    bottom: 0;
+  }
+
+  .silver-sponsors-logos .logo-field:nth-child(2n)::before,
+  .bronze-sponsors-logos .logo-field:nth-child(2n)::before,
+  .media-sponsors-logos .logo-field:nth-child(2n)::before,
+  .pf-logos .logo-field:nth-child(2n)::before {
+    display: none;
+  }
+
+  .silver-sponsors-logos .logo-field:nth-last-child(-n + 2)::after,
+  .bronze-sponsors-logos .logo-field:nth-last-child(-n + 2)::after,
+  .media-sponsors-logos .logo-field:nth-last-child(-n + 2)::after {
+    display: none;
+  }
+
+  .bronze-sponsors-logos .logo-field:nth-last-child(1)::after {
+    display: none;
+  }
+
+  .bronze-sponsors-logos .logo-field:not(:nth-last-child(-n + 2))::after,
+  .pf-logos .logo-field:nth-child(-n + 2)::after {
+    display: block;
+  }
+
+  #media-placeholder {
+    display: none;
+  }
+
+  #placeholder {
+    display: none;
+  }
+
+  .sponsors-by-category h4 {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .media-sponsors p,
+  .partners-friends p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  @media (min-width: 420px) {
+    .sponsors-section-logos {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .sponsors-section-logos img {
+      width: 70%;
+    }
+    .photomath,
+    .blank {
+      width: 70px !important;
+    }
+    .feg {
+      width: 40px !important;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .sponsors-section-heading h2 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .sponsors-section-heading p {
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+}
+
+@media (min-width: 800.1px) and (max-width: 1400px) {
+  .sponsors-section-heading {
+    padding-top: 100px;
+  }
+  .sponsors-section-heading h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .sponsors-section-heading p {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .sponsors-section-logos {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: repeat(7, 100px);
+    gap: 0;
+    padding: 10px;
+  }
+
+  .neogov {
+    grid-row: 3;
+    width: 50px;
+  }
+  .blank {
+    grid-row: 7;
+    grid-column: 2;
+    width: 50px !important;
+  }
+  .photomath {
+    grid-row: 1;
+    grid-column: 5;
+    width: 50px !important;
+  }
+  .agilno {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .agilno2 {
+    grid-column: 6;
+    grid-row: 3;
+  }
+  .feg {
+    grid-column: 4;
+    grid-row: 4;
+    width: 30px !important;
+  }
+  .infobip {
+    grid-column: 7;
+    grid-row: 6;
+  }
+  #agency {
+    top: 250px;
+    left: 40px;
+    width: 40px;
+  }
+  #blank {
+    top: 270px;
+    right: 40px;
+    width: 80px;
+  }
+  .photomath,
+  .blank {
+    width: 100px !important;
+  }
+  .feg {
+    width: 50px !important;
+  }
+  .neogov {
+    width: 70px;
+  }
+
+  .sponsor-card {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1000px) {
+    .sponsors-section-heading h2 {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    .sponsors-section-heading p {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 }
