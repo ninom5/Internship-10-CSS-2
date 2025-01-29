@@ -24,7 +24,7 @@
   width: 50%;
   padding-left: 90px;
 }
-.days-duck p {
+#subheader {
   font-family: var(--font-fam);
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -45,7 +45,8 @@
   padding-left: 5rem;
 }
 .days-info p {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   color: #171615b2;
   font-family: var(--font-fam);
   font-size: 2.9rem;
@@ -102,41 +103,6 @@
   width: 22%;
 }
 
-@media (min-width: 1100px) and (max-width: 1600px) {
-  .days-duck {
-    padding-left: 0;
-  }
-  #aa {
-    font-size: 0.8rem;
-    line-height: 1rem;
-    width: 120px;
-    height: 50px;
-  }
-  .days-info p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    width: 70%;
-  }
-  .days-duck img {
-    width: 100%;
-    padding-top: 130px;
-  }
-
-  .days-stats {
-    gap: 80px;
-  }
-  .days-stats p {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
-    width: 40%;
-    margin: 1rem 0;
-  }
-  .days-stats span {
-    font-size: 100px;
-    line-height: 100px;
-  }
-}
-
 @media (min-width: 350px) and (max-width: 800px) {
   .about-days {
     padding: 30px 20px 20px 20px;
@@ -145,7 +111,7 @@
   .days-duck {
     display: none;
   }
-  #aa {
+  #subheader {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 1px;
@@ -167,7 +133,6 @@
   .days-stats {
     width: 100%;
     margin-top: 50px;
-    /* gap: 120px; */
     gap: 0;
     height: auto;
   }
@@ -203,5 +168,99 @@
   .days-images img {
     width: 40%;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 800.1px) and (max-width: 1400px) {
+  .about-days {
+    padding: 15px 30px 0 30px;
+  }
+  #subheader {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    width: 150px;
+    height: 50px;
+  }
+  .days-duck {
+    padding-left: 0;
+  }
+  .days-duck img {
+    width: 100%;
+    width: 500px;
+    padding: 0;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
+
+  .days-info {
+    padding: 0;
+  }
+  .days-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .days-stats {
+    gap: 80px;
+  }
+  .days-stats p {
+    font-size: 16px;
+    line-height: 16px;
+    width: 30%;
+    margin: 15px 15px;
+  }
+  .days-stats span {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  @media (max-width: 1100px) {
+    .days-info p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+    .days-images {
+      padding-top: 100px;
+    }
+    .days-stats p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .days-duck {
+    padding-left: 0;
+  }
+  #subheader {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    width: 120px;
+    height: 50px;
+  }
+  .days-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 70%;
+  }
+  .days-duck img {
+    width: 100%;
+    padding-top: 130px;
+  }
+
+  .days-stats {
+    gap: 80px;
+  }
+  .days-stats p {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    width: 40%;
+    margin: 1rem 0;
+  }
+  .days-stats span {
+    font-size: 100px;
+    line-height: 100px;
   }
 }
