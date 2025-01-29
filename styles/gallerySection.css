@@ -9,7 +9,6 @@
   width: 100%;
   max-height: 701px;
 }
-
 .gallery-cover img {
   position: absolute;
   width: 100%;
@@ -28,6 +27,7 @@
   top: 56px;
   right: 56px;
   z-index: 3;
+  cursor: pointer;
 }
 .gallery-cover img:nth-of-type(4) {
   z-index: 4;
@@ -56,7 +56,7 @@
   font-size: 120px;
   font-weight: 600;
   line-height: 144px;
-  letter-spacing: -5;
+  letter-spacing: -5px;
   text-align: left;
   color: var(--light-gray-color);
 }
@@ -193,37 +193,33 @@
 
 @media (max-width: 1000px) {
   .gallery-section {
-    min-width: 350px;
-    height: 640px;
+    height: 501px;
   }
 
   .gallery-cover {
-    min-width: 100%;
-    height: 755px;
-    overflow: hidden;
+    max-height: 501px;
   }
-
-  .gallery-cover img:first-of-type {
-    display: none;
-  }
+  .gallery-cover img:first-of-type,
   .gallery-cover img:nth-of-type(2) {
-    width: 800px;
-    height: 640px;
-    left: -100px;
+    height: 501px;
   }
   .gallery-cover img:nth-of-type(3) {
+    width: 40px;
     top: 36px;
-    right: 16px;
-    width: 24px;
-    height: 24px;
+    right: 36px;
   }
   .gallery-cover img:nth-of-type(4) {
-    top: 400px;
+    top: 457px;
   }
-  .gallery-cover img:nth-of-type(5) {
-    display: block;
+
+  .gallery-cover h1 {
+    top: 255px;
+    font-size: 90px;
+  }
+  .gallery-cover p {
+    top: 400px;
     width: 100%;
-    height: 780px;
+    text-align: center;
   }
 }
 
@@ -238,7 +234,6 @@
     height: 555px;
     overflow: hidden;
   }
-
   .gallery-cover img:first-of-type {
     display: none;
   }
@@ -248,7 +243,6 @@
     left: -100px;
   }
   .gallery-cover img:nth-of-type(3) {
-    top: 36px;
     right: 16px;
     width: 24px;
     height: 24px;
@@ -263,21 +257,20 @@
   }
 
   .gallery-cover h1 {
-    top: 220px;
     font-size: 64px;
     font-weight: 500;
     line-height: 87.46px;
-    letter-spacing: -3.27974271774292px;
+    letter-spacing: -3.3px;
+    top: 220px;
   }
   .gallery-cover p {
-    top: 350px;
     width: 217px;
     height: 28px;
     font-size: 12px;
-    font-weight: 500;
     line-height: 14px;
     letter-spacing: 0.5px;
     text-align: center;
+    top: 350px;
   }
 
   #white-quote img,
@@ -286,7 +279,7 @@
   }
 
   .quote {
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
   }
   .quote-text {
     padding-left: 0;
@@ -296,13 +289,9 @@
     letter-spacing: -1px;
     border-left: none;
   }
-  #white-quote .quote-text {
-    padding-top: 20px;
-  }
 
   #third-quote {
     flex-direction: column-reverse;
-    gap: 20px;
   }
   #third-quote .quote-text {
     width: 100%;
@@ -321,9 +310,6 @@
   }
   #third-element p {
     width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
   }
 }
 
@@ -335,11 +321,9 @@
   .gallery-cover {
     height: 430px;
   }
-
   .gallery-cover img:nth-of-type(2) {
     height: 430px;
   }
-
   .gallery-cover img:nth-of-type(6) {
     display: block;
     width: 800px;

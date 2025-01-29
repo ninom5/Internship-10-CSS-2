@@ -29,7 +29,6 @@
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 1px;
-  text-align: left;
   color: white;
   opacity: 70%;
 }
@@ -50,7 +49,6 @@
 #registration-image {
   width: 100%;
   height: auto;
-  left: 53px;
 }
 
 @media (min-width: 350px) and (max-width: 600px) {

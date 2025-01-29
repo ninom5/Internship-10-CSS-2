@@ -31,7 +31,7 @@
 
 .days-lectures-heading .section-breaker {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   object-fit: cover;
   transform: translateX(-50%);
@@ -129,12 +129,11 @@
   top: 50%;
   right: 180px;
   transform: translateY(-50%);
-  width: 119.01px;
-  height: 149.13px;
+  width: 119px;
+  height: 149px;
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/images/Speaker\ img\ 1.png");
+  background: url("../assets/images/Speaker\ img\ 1.png") center/contain
+    no-repeat;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -203,6 +202,9 @@
   .list-item::after {
     content: none;
   }
+  .typewriter {
+    line-height: 2;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -247,11 +249,6 @@
     display: none;
   }
 
-  .typewriter {
-    font-size: 12px;
-    line-height: 2;
-  }
-
   .list-item-info p {
     font-size: 12px;
   }
@@ -269,7 +266,6 @@
     height: 749px;
     overflow: hidden;
   }
-
   .days-lectures-heading h1 {
     width: 309px;
     height: 80px;
@@ -279,7 +275,6 @@
     letter-spacing: -3px;
     margin: 0;
   }
-
   .days-lectures-heading .section-breaker {
     filter: brightness(1000%);
   }
@@ -296,19 +291,24 @@
   .list {
     display: none;
   }
-
   .mobile-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 100%;
   }
-
   .mobile-list-item {
     display: flex;
     flex-direction: column;
     gap: 8px;
     border-bottom: 3.5px dotted #ccc;
+  }
+
+  .label {
+    height: 30px;
+  }
+  .label p {
+    margin-top: -5px;
   }
 
   .mobile-list-item-time {
@@ -337,7 +337,6 @@
     flex-direction: column;
     gap: 4px;
   }
-
   .mobile-info-2 p:nth-child(1) {
     font-family: var(--font-fam-2);
     font-size: 14px;
