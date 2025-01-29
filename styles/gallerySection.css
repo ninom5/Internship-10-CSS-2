@@ -191,7 +191,43 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
+  .gallery-section {
+    min-width: 350px;
+    height: 640px;
+  }
+
+  .gallery-cover {
+    min-width: 100%;
+    height: 755px;
+    overflow: hidden;
+  }
+
+  .gallery-cover img:first-of-type {
+    display: none;
+  }
+  .gallery-cover img:nth-of-type(2) {
+    width: 800px;
+    height: 640px;
+    left: -100px;
+  }
+  .gallery-cover img:nth-of-type(3) {
+    top: 36px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+  .gallery-cover img:nth-of-type(4) {
+    top: 400px;
+  }
+  .gallery-cover img:nth-of-type(5) {
+    display: block;
+    width: 100%;
+    height: 780px;
+  }
+}
+
+@media (max-width: 650px) {
   .gallery-section {
     min-width: 350px;
     height: 440px;
