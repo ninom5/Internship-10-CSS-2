@@ -55,7 +55,7 @@
   width: 100%;
   top: 0;
   right: -120%;
-  background-image: url("../assets/images/mobileBackgroundHero.png");
+  background-image: url("../assets/images/mobileBackgroundHeroCompressed.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@
 }
 .hero-scrolling {
   position: relative;
-  background-image: url("../assets/images/Hero\ background.jpg");
+  background-image: url("../assets/images/Hero\ backgroundCompressed.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
