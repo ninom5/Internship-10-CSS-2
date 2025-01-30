@@ -56,7 +56,7 @@ header {
   display: none;
   font-size: 24px;
   position: absolute;
-  top: 45px;
+  top: 15px;
   right: 25px;
   cursor: pointer;
 }
@@ -135,6 +135,7 @@ header {
   height: 100%;
   padding: 0;
   position: relative;
+  align-items: center;
 }
 .hero-scrolling {
   position: relative;
@@ -185,7 +186,7 @@ header {
 }
 
 .speaker-title img:first-of-type {
-  /* margin-inline: 40px; */
+  margin: 0 30px;
 }
 
 .speaker-title img:last-of-type {
@@ -319,9 +320,47 @@ header {
 }
 
 @media (min-width: 350px) and (max-width: 800px) {
+  .hero-scrolling {
+    margin: 0;
+    width: 100%;
+    background-image: url("../assets/images/mobileBackgroundHero.png");
+  }
   .hero-navigation {
-    flex-direction: column;
-    /* align-items: flex-start; */
+    top: 30px;
+    padding: 0 0 0 30px !important;
+  }
+  .hero-navigation-desc {
+    display: none;
+  }
+
+  #hero-desc-mobile {
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    /* z-index: 20000; */
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-family: var(--font-fam-3);
+  }
+  #hero-button-mobile {
+    display: block;
+    position: absolute;
+    bottom: 150px;
+    width: 95%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #121212;
+    font-family: var(--font-fam-3);
+  }
+  .speaker-title p {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -5px;
   }
   .hero-navigation p {
     font-size: 14px;
@@ -343,7 +382,8 @@ header {
     font-family: var(--font-fam-3);
   }
   .hero-navigation-button {
-    order: 2;
+    display: none;
+    /* order: 2;
     width: 90%;
     margin: 0;
     font-size: 14px;
@@ -353,7 +393,7 @@ header {
     position: absolute;
     bottom: 100px;
     z-index: 1000;
-    font-family: var(--font-fam-3);
+    font-family: var(--font-fam-3); */
   }
   .hero-navigation p:nth-of-type(2) {
     order: 3;
