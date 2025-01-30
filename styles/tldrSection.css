@@ -65,6 +65,43 @@
   display: none;
 }
 
+@media (min-width: 800.1px) and (max-width: 1600px) {
+  .tldr-background {
+    min-height: 700px;
+  }
+  .tldr-background img:first-of-type {
+    height: 700px;
+  }
+
+  #d-logo {
+    width: 150px;
+    top: -70px;
+    right: 50px;
+    z-index: 2000;
+  }
+  #duck {
+    width: 350px;
+    top: 400px;
+    left: -80px;
+  }
+
+  .tldr-heading {
+    top: 20%;
+    transform: translate(-50%, 0);
+  }
+
+  .tldr-heading h1 {
+    font-size: 70px;
+    line-height: 65px;
+    letter-spacing: -3px;
+  }
+  .tldr-heading p {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+}
+
 @media (min-width: 350px) and (max-width: 800px) {
   .tldr-background {
     min-height: 700px;
@@ -119,42 +156,5 @@
       line-height: 16px;
       letter-spacing: 0px;
     }
-  }
-}
-
-@media (min-width: 800.1px) and (max-width: 1500px) {
-  .tldr-background {
-    min-height: 700px;
-  }
-  .tldr-background img:first-of-type {
-    height: 700px;
-  }
-
-  #d-logo {
-    width: 150px;
-    top: -70px;
-    right: 50px;
-    z-index: 2000;
-  }
-  #duck {
-    width: 350px;
-    top: 400px;
-    left: -80px;
-  }
-
-  .tldr-heading {
-    top: 20%;
-    transform: translate(-50%, 0);
-  }
-
-  .tldr-heading h1 {
-    font-size: 70px;
-    line-height: 65px;
-    letter-spacing: -3px;
-  }
-  .tldr-heading p {
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 1px;
   }
 }

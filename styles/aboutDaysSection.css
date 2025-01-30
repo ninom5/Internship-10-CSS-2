@@ -75,9 +75,11 @@
   margin-bottom: 2rem;
   font-family: var(--font-fam-2);
 }
+
 .mobile-duck {
   display: none;
 }
+
 .days-images {
   display: flex;
   flex-direction: row;
