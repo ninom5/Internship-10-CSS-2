@@ -355,7 +355,6 @@
   #hamburger-toggle:checked ~ .hamburger-btn {
     display: none;
   }
-
   #hamburger-toggle:checked ~ .hamburger-close-btn {
     display: block;
     position: fixed;
