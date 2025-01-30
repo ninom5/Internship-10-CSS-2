@@ -89,7 +89,6 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* justify-content: space-between; */
   padding: 50px 20px 30px 20px;
   position: relative;
   z-index: 2;
@@ -103,31 +102,28 @@ header {
   position: relative;
   z-index: 2;
 }
+
 #hero-hamburger-menu {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  text-align: left;
-  align-self: center;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 1px;
-  font-family: var(--font-fam-2);
-  color: var(--light-gray-color);
-  list-style: none;
-  width: 90%;
+  gap: 50px;
   border-bottom: 4px dotted gray;
-  padding-bottom: 35px;
+  padding-bottom: 50px;
   padding-left: 0;
   position: relative;
   align-items: flex-start;
-  z-index: 2;
   top: 0;
-  margin: 0;
 }
-#hero-hamburger-menu li {
+#hero-hamburger-menu li a {
   cursor: pointer;
+  text-align: left;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -2px;
+  font-family: var(--font-fam-2);
+  color: var(--light-gray-color);
 }
+
 .animation-main {
   display: flex;
   flex-direction: column;
@@ -145,9 +141,9 @@ header {
   background-repeat: no-repeat;
   display: flex;
   /* flex-direction: column; */
-  width: calc(100% - 100px);
+  width: calc(100% - 60px);
   height: calc(100vh - 100px);
-  margin: 50px;
+  margin: 30px;
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
@@ -215,7 +211,6 @@ header {
 }
 
 .hero-menu {
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -224,7 +219,8 @@ header {
   padding: 1.8rem;
   position: absolute;
   bottom: 50px;
-  left: 75px;
+  left: 5%;
+  list-style: none;
 }
 .hero-menu li a {
   color: #ffffff;
@@ -233,6 +229,13 @@ header {
   font-size: 1.3rem;
   line-height: 1.3rem;
   letter-spacing: 1px;
+}
+
+#hero-desc-mobile {
+  display: none;
+}
+#hero-button-mobile {
+  display: none;
 }
 
 @media (min-width: 1100.1px) and (max-width: 1600px) {
@@ -336,7 +339,7 @@ header {
   #hero-desc-mobile {
     display: block;
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     /* z-index: 20000; */
     color: white;
     text-align: center;
@@ -348,7 +351,7 @@ header {
   #hero-button-mobile {
     display: block;
     position: absolute;
-    bottom: 150px;
+    bottom: 120px;
     width: 95%;
     margin: 0;
     font-size: 14px;
@@ -425,28 +428,38 @@ header {
   #hamburger-toggle:checked ~ .hamburger-close-btn {
     display: block;
     position: fixed;
-    top: 30px;
+    top: 35px;
     z-index: 2000;
-    right: 10px;
+    right: 25px;
     font-size: 40px;
     cursor: pointer;
   }
 
   .hamburger-text-button {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 50px;
   }
 
   #menu-register-button {
-    position: relative;
-    top: 10px;
-    margin: 30px auto;
+    display: block;
+    position: absolute;
+    bottom: auto;
+    width: 95%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #121212;
+    font-family: var(--font-fam-3);
   }
 
   #hamburger-desc {
     position: relative;
-    top: 20px;
+    top: 100px;
     margin: 0 auto;
     text-align: center;
   }
