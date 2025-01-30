@@ -6,7 +6,7 @@
       rgba(23, 22, 21, 0.2),
       rgba(23, 22, 21, 0.2)
     ),
-    url("../assets/images/BG texture.png");
+    url("../../assets/images/BG texture.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,7 +14,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  /* margin-top: 90px; */
   align-items: center;
 }
 

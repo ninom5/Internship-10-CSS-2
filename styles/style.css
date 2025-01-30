@@ -1,0 +1,23 @@
+@import "./base/fonts.css";
+@import "./sections/heroSection.css";
+@import "./sections/aboutDaysSection.css";
+@import "./sections/lecturesSection.css";
+@import "./sections/speakersSection.css";
+@import "./sections/locationSection.css";
+@import "./sections/sponsorsSection.css";
+@import "./sections/registrationSection.css";
+@import "./sections/gallerySection.css";
+@import "./sections/faqSection.css";
+@import "./sections/tldrSection.css";
+@import "./sections/questionsSection.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-background-color);
+}
