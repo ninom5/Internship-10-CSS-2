@@ -3,115 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="dump days 2024 webpage" />
+    <title>DUMPDays 2024</title>
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/images/Days Sticker.png" />
   </head>
   <body>
     <header id="hero-header">
-      <div class="hero">
-        <nav class="hero-navigation">
-          <p>
-            SPLIT &nbsp;// &nbsp;FESB<br />
-            23.&nbsp;-&nbsp;24.&nbsp;05.&nbsp;2024.
-          </p>
+      <nav class="hero-navigation">
+        <p>
+          SPLIT &nbsp;// &nbsp;FESB<br />
+          23.&nbsp;-&nbsp;24.&nbsp;05.&nbsp;2024.
+        </p>
 
-          <input type="checkbox" id="hamburger-toggle" style="display: none" />
+        <input type="checkbox" id="hamburger-toggle" style="display: none" />
 
-          <label
-            for="hamburger-toggle"
-            class="hamburger-btn"
-            aria-label="Toggle Menu"
-            >&#9776;</label
-          >
+        <label
+          for="hamburger-toggle"
+          class="hamburger-btn"
+          aria-label="Toggle Menu"
+          >&#9776;</label
+        >
 
-          <label
-            for="hamburger-toggle"
-            class="hamburger-close-btn"
-            aria-label="Close Menu"
-            >&times;</label
-          >
-          <nav class="hamburger-menu">
-            <!-- <img src="./assets/images/mobileBackgroundHero.png" alt="" /> -->
-            <div id="hamburger-menu-heading">
-              <h3>IZBORNIK</h3>
-            </div>
-            <menu class="hero-menu" id="hero-hamburger-menu">
-              <li>KONFERENCIJA</li>
-              <li>SPEAKERI</li>
-              <li>RASPORED</li>
-              <li>SPONZORI</li>
-              <li>KONTAKT</li>
-            </menu>
+        <label
+          for="hamburger-toggle"
+          class="hamburger-close-btn"
+          aria-label="Close Menu"
+          >&times;</label
+        >
+        <nav class="hamburger-menu">
+          <!-- <img src="./assets/images/mobileBackgroundHero.png" alt="" /> -->
+          <div id="hamburger-menu-heading">
+            <h3>IZBORNIK</h3>
+          </div>
+          <menu class="hero-menu" id="hero-hamburger-menu">
+            <li>KONFERENCIJA</li>
+            <li>SPEAKERI</li>
+            <li>RASPORED</li>
+            <li>SPONZORI</li>
+            <li>KONTAKT</li>
+          </menu>
 
-            <div class="hamburger-text-button">
-              <button class="hero-navigation-button" id="menu-register-button">
-                REGISTRIRAJ SE
-              </button>
+          <div class="hamburger-text-button">
+            <button class="hero-navigation-button" id="menu-register-button">
+              REGISTRIRAJ SE
+            </button>
 
-              <p id="hamburger-desc">
-                BESPLATNA KONFERENCIJA<br />
-                ZA NOVU GENERACIJU
-              </p>
-            </div>
-          </nav>
-
-          <p class="hero-navigation-desc">
-            BESPLATNA KONFERENCIJA<br />
-            ZA NOVU GENERACIJU
-          </p>
-          <button class="hero-navigation-button">REGISTRIRAJ SE</button>
+            <p id="hamburger-desc">
+              BESPLATNA KONFERENCIJA<br />
+              ZA NOVU GENERACIJU
+            </p>
+          </div>
         </nav>
 
-        <div class="hero-scrolling">
-          <div class="hero-scrolling-content">
-            <div class="scrolling-people">
-              <img src="./assets/images/Digitalac.png" class="digitalac" />
-              <img src="./assets/images/Marketingaš.png" class="markentigas" />
-              <img src="./assets/images/Programer.png" class="programer" />
-              <img src="./assets/images/Dizajner.png" class="dizajner" />
-              <img src="./assets/images/Poduzetnik.png" class="poduzetnik" />
+        <p class="hero-navigation-desc">
+          BESPLATNA KONFERENCIJA<br />
+          ZA NOVU GENERACIJU
+        </p>
+        <button class="hero-navigation-button">REGISTRIRAJ SE</button>
+      </nav>
+    </header>
+
+    <div class="animation-main">
+      <div class="hero-scrolling">
+        <div class="hero-scrolling-content">
+          <div class="hero-scrolling-content__element">
+            <div class="speaker-title">
+              <p>DIGITALACA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Digitalac.png" id="digitalac" />
             </div>
 
-            <div class="scrolling-text">
-              <h1>DIGITALACA</h1>
-              <img
-                src="./assets/images/Days Sticker.png"
-                alt="dump days logo"
-              />
-              <h1>MARKETINGAŠA</h1>
-              <img
-                src="./assets/images/Days Sticker.png"
-                alt="dump days logo"
-              />
-              <h1>PROGRAMERA</h1>
-              <img
-                src="./assets/images/Days Sticker.png"
-                alt="dump days logo"
-              />
-              <h1>DIZAJNERA</h1>
-              <img
-                src="./assets/images/Days Sticker.png"
-                alt="dump days logo"
-              />
-              <h1>PODUZETNIKA</h1>
-              <img
-                src="./assets/images/Days Sticker.png"
-                alt="dump days logo"
-              />
+            <div class="speaker-title">
+              <p>MARKETINGAŠA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Marketingaš.png" id="marketingas" />
+            </div>
+
+            <div class="speaker-title">
+              <p>PROGRAMERA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Programer.png" id="programer" />
+            </div>
+
+            <div class="speaker-title">
+              <p>DIZAJNERA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Dizajner.png" id="dizajner" />
+            </div>
+
+            <div class="speaker-title">
+              <p>PODUZETNIKA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Poduzetnik.png" id="poduzetnik" />
             </div>
           </div>
         </div>
+        <div class="hero-scrolling-content">
+          <div class="hero-scrolling-content__element">
+            <div class="speaker-title">
+              <p>DIGITALACA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Digitalac.png" id="digitalac" />
+            </div>
 
-        <menu class="hero-menu">
-          <li><a href="">KONFERENCIJA</a></li>
-          <li><a href="">SPEAKERI</a></li>
-          <li><a href="">RASPORED</a></li>
-          <li><a href="">SPONZORI</a></li>
-          <li><a href="">KONTAKT</a></li>
-        </menu>
+            <div class="speaker-title">
+              <p>MARKETINGAŠA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Marketingaš.png" id="marketingas" />
+            </div>
+
+            <div class="speaker-title">
+              <p>PROGRAMERA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Programer.png" id="programer" />
+            </div>
+
+            <div class="speaker-title">
+              <p>DIZAJNERA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Dizajner.png" id="dizajner" />
+            </div>
+
+            <div class="speaker-title">
+              <p>PODUZETNIKA</p>
+              <img src="./assets/images/Days Sticker.png" />
+              <img src="./assets/images/Poduzetnik.png" id="poduzetnik" />
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+      <menu class="hero-menu">
+        <li><a href="">KONFERENCIJA</a></li>
+        <li><a href="">SPEAKERI</a></li>
+        <li><a href="">RASPORED</a></li>
+        <li><a href="">SPONZORI</a></li>
+        <li><a href="">KONTAKT</a></li>
+      </menu>
+    </div>
 
     <main>
       <section class="about-days">
