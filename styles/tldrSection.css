@@ -8,14 +8,13 @@
 
 .tldr-background {
   position: relative;
-  min-height: 1000px;
+  min-height: 800px;
   width: 100%;
 }
 .tldr-background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  height: auto;
   position: absolute;
   top: 0;
 }
@@ -51,26 +50,95 @@
   position: absolute;
   top: -115px;
   right: 150px;
+  height: auto;
+  z-index: 5;
 }
 
 #duck {
   width: 400px;
   position: absolute;
-  top: 650px;
+  top: 550px;
   left: 50px;
   z-index: 1000;
+  height: auto;
 }
 
 #background-mobile {
   display: none;
 }
 
-@media (min-width: 350px) and (max-width: 800px) {
+@media (min-width: 800.1px) and (max-width: 1300px) {
+  .tldr-background {
+    min-height: 700px;
+  }
+  .tldr-background img:first-of-type {
+    height: 700px;
+  }
+
+  #d-logo {
+    width: 150px;
+    top: -70px;
+    right: 50px;
+  }
+  #duck {
+    width: 350px;
+    top: 400px;
+    left: -80px;
+  }
+
+  .tldr-heading {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tldr-heading h1 {
+    font-size: 80px;
+    line-height: 70px;
+    letter-spacing: -3px;
+  }
+  .tldr-heading p {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 600.1px) and (max-width: 800px) {
+  #d-logo {
+    width: 125px;
+    top: -70px;
+    right: 50px;
+  }
+  #duck {
+    width: 300px;
+    top: 550px;
+    left: -80px;
+  }
+
+  .tldr-heading {
+    top: 30%;
+    transform: translate(-50%, 0);
+  }
+
+  .tldr-heading h1 {
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: 0px;
+  }
+  .tldr-heading p {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
   .tldr-background {
     min-height: 700px;
   }
   #background-mobile {
     display: block;
+    object-fit: cover;
   }
   .tldr-background img:first-of-type {
     display: none;
@@ -79,7 +147,6 @@
     width: 130px;
     top: -70px;
     right: 50px;
-    z-index: 2000;
   }
 
   .tldr-heading {
@@ -119,42 +186,5 @@
       line-height: 16px;
       letter-spacing: 0px;
     }
-  }
-}
-
-@media (min-width: 800.1px) and (max-width: 1500px) {
-  .tldr-background {
-    min-height: 700px;
-  }
-  .tldr-background img:first-of-type {
-    height: 700px;
-  }
-
-  #d-logo {
-    width: 150px;
-    top: -70px;
-    right: 50px;
-    z-index: 2000;
-  }
-  #duck {
-    width: 350px;
-    top: 400px;
-    left: -80px;
-  }
-
-  .tldr-heading {
-    top: 20%;
-    transform: translate(-50%, 0);
-  }
-
-  .tldr-heading h1 {
-    font-size: 70px;
-    line-height: 65px;
-    letter-spacing: -3px;
-  }
-  .tldr-heading p {
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 1px;
   }
 }

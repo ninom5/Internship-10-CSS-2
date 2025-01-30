@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: 350px) and (max-width: 700px) {
+@media (min-width: 350px) and (max-width: 720px) {
   #tldr-section-breaker {
     object-fit: cover;
   }

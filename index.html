@@ -3,118 +3,242 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="dump days 2024 webpage" />
+    <title>DUMPDays 2024</title>
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/Hero backgroundCompressed.webp"
+      type="image/webp"
+    />
   </head>
   <body>
     <header id="hero-header">
-      <div class="hero">
-        <nav class="hero-navigation">
-          <p>
-            SPLIT &nbsp;// &nbsp;FESB<br />
-            23.&nbsp;-&nbsp;24.&nbsp;05.&nbsp;2024.
-          </p>
+      <nav class="hero-navigation">
+        <p>
+          SPLIT &nbsp;// &nbsp;FESB<br />
+          23.&nbsp;-&nbsp;24.&nbsp;05.&nbsp;2024.
+        </p>
 
-          <input type="checkbox" id="hamburger-toggle" style="display: none" />
+        <input type="checkbox" id="hamburger-toggle" style="display: none" />
 
-          <label
-            for="hamburger-toggle"
-            class="hamburger-btn"
-            aria-label="Toggle Menu"
-            >&#9776;</label
-          >
+        <label
+          for="hamburger-toggle"
+          class="hamburger-btn"
+          aria-label="Toggle Menu"
+          >&#9776;</label
+        >
 
-          <label
-            for="hamburger-toggle"
-            class="hamburger-close-btn"
-            aria-label="Close Menu"
-            >&times;</label
-          >
-          <nav class="hamburger-menu">
-            <!-- <img src="./assets/images/mobileBackgroundHero.png" alt="" /> -->
-            <div id="hamburger-menu-heading">
-              <h3>IZBORNIK</h3>
-            </div>
-            <menu class="hero-menu" id="hero-hamburger-menu">
-              <li>KONFERENCIJA</li>
-              <li>SPEAKERI</li>
-              <li>RASPORED</li>
-              <li>SPONZORI</li>
-              <li>KONTAKT</li>
-            </menu>
+        <label
+          for="hamburger-toggle"
+          class="hamburger-close-btn"
+          aria-label="Close Menu"
+          >&times;</label
+        >
+        <nav class="hamburger-menu">
+          <div id="hamburger-menu-heading">
+            <h3>IZBORNIK</h3>
+          </div>
 
-            <div class="hamburger-text-button">
-              <button class="hero-navigation-button" id="menu-register-button">
-                REGISTRIRAJ SE
-              </button>
+          <menu class="hero-menu" id="hero-hamburger-menu">
+            <li><a href="#conference" class="menu-link">KONFERENCIJA</a></li>
+            <li><a href="#speakers">SPEAKERI</a></li>
+            <li><a href="#schedule">RASPORED</a></li>
+            <li><a href="#sponsors">SPONZORI</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+          </menu>
 
-              <p id="hamburger-desc">
-                BESPLATNA KONFERENCIJA<br />
-                ZA NOVU GENERACIJU
-              </p>
-            </div>
-          </nav>
+          <div class="hamburger-text-button">
+            <button class="hero-navigation-button" id="menu-register-button">
+              REGISTRIRAJ SE
+            </button>
 
-          <p class="hero-navigation-desc">
-            BESPLATNA KONFERENCIJA<br />
-            ZA NOVU GENERACIJU
-          </p>
-          <button class="hero-navigation-button">REGISTRIRAJ SE</button>
+            <p id="hamburger-desc">
+              BESPLATNA KONFERENCIJA<br />
+              ZA NOVU GENERACIJU
+            </p>
+          </div>
         </nav>
 
-        <div class="hero-scrolling">
-          <div class="hero-scrolling-content">
-            <div class="scrolling-people">
-              <img src="./assets/images/Digitalac.png" class="digitalac" />
-              <img src="./assets/images/Marketingaš.png" class="markentigas" />
-              <img src="./assets/images/Programer.png" class="programer" />
-              <img src="./assets/images/Dizajner.png" class="dizajner" />
-              <img src="./assets/images/Poduzetnik.png" class="poduzetnik" />
+        <p class="hero-navigation-desc">
+          BESPLATNA KONFERENCIJA<br />
+          ZA NOVU GENERACIJU
+        </p>
+        <button class="hero-navigation-button">REGISTRIRAJ SE</button>
+      </nav>
+    </header>
+
+    <div class="animation-main">
+      <div class="hero-scrolling">
+        <div class="hero-scrolling-content">
+          <div class="hero-scrolling-content__element">
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Digitalac.png"
+                id="digitalac"
+                alt="person"
+              />
+              <h3>DIGITALACA</h3>
+              <img
+                src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
+                alt="dump days logo"
+              />
             </div>
 
-            <div class="scrolling-text">
-              <h1>DIGITALACA</h1>
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Marketingaš.png"
+                id="marketingas"
+                alt="person"
+              />
+              <h3>MARKETINGAŠA</h3>
               <img
                 src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
                 alt="dump days logo"
               />
-              <h1>MARKETINGAŠA</h1>
+            </div>
+
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Programer.png"
+                id="programer"
+                alt="person"
+              />
+              <h3>PROGRAMERA</h3>
               <img
                 src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
                 alt="dump days logo"
               />
-              <h1>PROGRAMERA</h1>
+            </div>
+
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Dizajner.png"
+                id="dizajner"
+                alt="person"
+              />
+              <h3>DIZAJNERA</h3>
               <img
                 src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
                 alt="dump days logo"
               />
-              <h1>DIZAJNERA</h1>
+            </div>
+
+            <div class="speaker-title">
               <img
-                src="./assets/images/Days Sticker.png"
-                alt="dump days logo"
+                src="./assets/images/Poduzetnik.png"
+                id="poduzetnik"
+                alt="person"
               />
-              <h1>PODUZETNIKA</h1>
+              <h3>PODUZETNIKA</h3>
               <img
                 src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
                 alt="dump days logo"
               />
             </div>
           </div>
         </div>
+        <div class="hero-scrolling-content">
+          <div class="hero-scrolling-content__element">
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Digitalac.png"
+                id="digitalac"
+                alt="person"
+              />
+              <h3>DIGITALACA</h3>
+              <img
+                src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
+                alt="dump days logo"
+              />
+            </div>
 
-        <menu class="hero-menu">
-          <li><a href="">KONFERENCIJA</a></li>
-          <li><a href="">SPEAKERI</a></li>
-          <li><a href="">RASPORED</a></li>
-          <li><a href="">SPONZORI</a></li>
-          <li><a href="">KONTAKT</a></li>
-        </menu>
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Marketingaš.png"
+                id="marketingas"
+                alt="person"
+              />
+              <h3>MARKETINGAŠA</h3>
+              <img
+                src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
+                alt="dump days logo"
+              />
+            </div>
+
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Programer.png"
+                id="programer"
+                alt="person"
+              />
+              <h3>PROGRAMERA</h3>
+              <img
+                src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
+                alt="dump days logo"
+              />
+            </div>
+
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Dizajner.png"
+                id="dizajner"
+                alt="person"
+              />
+              <h3>DIZAJNERA</h3>
+              <img
+                src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
+                alt="dump days logo"
+              />
+            </div>
+
+            <div class="speaker-title">
+              <img
+                src="./assets/images/Poduzetnik.png"
+                id="poduzetnik"
+                alt="person"
+              />
+              <h3>PODUZETNIKA</h3>
+              <img
+                src="./assets/images/Days Sticker.png"
+                id="days-scrolling-logo"
+                alt="dump days logo"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+
+      <p class="hero-navigation-desc" id="hero-desc-mobile">
+        BESPLATNA KONFERENCIJA<br />
+        ZA NOVU GENERACIJU
+      </p>
+      <button class="hero-navigation-button" id="hero-button-mobile">
+        REGISTRIRAJ SE
+      </button>
+
+      <menu class="hero-menu">
+        <li><a href="#conference">KONFERENCIJA</a></li>
+        <li><a href="#speakers">SPEAKERI</a></li>
+        <li><a href="#schedule">RASPORED</a></li>
+        <li><a href="#sponsors">SPONZORI</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
+      </menu>
+    </div>
 
     <main>
-      <section class="about-days">
+      <section class="about-days" id="conference">
         <p id="subheader">DEV, &nbsp; DESIGN &TECH KONFA</p>
         <div class="days-duck">
           <img src="./assets/images/Paticka scroll area.png" alt="duck" />
@@ -179,12 +303,12 @@
         <h1>PREDAVANJA (16)</h1>
         <img
           src="./assets/images/Section breaker.png"
-          alt=""
+          alt="section breaker"
           class="section-breaker"
         />
       </section>
 
-      <section class="days-lectures-content">
+      <section class="days-lectures-content" id="schedule">
         <div class="picker">
           <div class="picker-date">
             <p id="picker-date-choosen">PETAK, 25.05</p>
@@ -432,7 +556,7 @@
         </div>
       </section>
 
-      <section class="section-speakers">
+      <section class="section-speakers" id="speakers">
         <img
           src="./assets/images/Section breaker2.png"
           alt=""
@@ -446,7 +570,7 @@
           </header>
 
           <div class="section-speakers-images">
-            <div class="image-txt-frame" id="img1">
+            <div class="image-txt-frame" id="davor">
               <img
                 src="./assets/images/Film frame + image davorBruketa.png"
                 alt="Davor Bruketa"
@@ -456,7 +580,7 @@
               <p>CTO @GETBYBUS</p>
             </div>
 
-            <div class="image-txt-frame" id="img2">
+            <div class="image-txt-frame" id="matija">
               <img
                 src="./assets/images/Film frame + image (3) matijaLuketin.png"
                 alt="Matija Luketin"
@@ -465,7 +589,7 @@
               <p>CEO @BLANK</p>
             </div>
 
-            <div class="image-txt-frame" id="img3">
+            <div class="image-txt-frame" id="marin">
               <img
                 src="./assets/images/Film frame + image (1)marinRadmilovic.png"
                 alt="Marin Radmilović"
@@ -474,7 +598,7 @@
               <p>SENIOR SOFTWARE DEVELOPER @BLANK</p>
             </div>
 
-            <div class="image-txt-frame" id="img4">
+            <div class="image-txt-frame" id="antonio">
               <img
                 src="./assets/images/Film frame + image antonioVidakovic.png"
                 alt="Antonio Vidaković"
@@ -485,10 +609,10 @@
             <img
               src="./assets/images/Film frame + image (4) uk.png"
               alt="Speaker"
-              id="uk"
+              id="ukn"
             />
 
-            <div class="image-txt-frame" id="img5">
+            <div class="image-txt-frame" id="kanye">
               <img
                 src="./assets/images/Film frame + image (2) yE.png"
                 alt="Kanye West"
@@ -505,6 +629,7 @@
         <img
           src="./assets/images/Section breaker3.png"
           class="section-location-breaker"
+          alt="section breaker"
         />
         <h1 id="location-headline">LOKACIJA</h1>
         <img
@@ -512,9 +637,17 @@
           alt="stamp of FESB"
           id="stamp1"
         />
-        <img src="./assets/images/Vector.png" id="stamp2" />
-        <img src="./assets/images/BG Image.png" id="background-cover-image" />
-        <img src="./assets/images/BG texture.png" id="background-texture" />
+        <img src="./assets/images/Vector.png" id="stamp2" alt="stamp image" />
+        <img
+          src="./assets/images/BG Image.png"
+          id="background-cover-image"
+          alt="image of house"
+        />
+        <img
+          src="./assets/images/BG texture.png"
+          id="background-texture"
+          alt="texture"
+        />
         <img
           src="./assets/images/Mask group.png"
           alt="house"
@@ -537,6 +670,7 @@
         <img
           src="./assets/images/Section breaker3.png"
           class="section-location-breaker second-breaker"
+          alt="section breaker"
         />
 
         <p id="stamp-headline">Ista adresa, više sadržaja</p>
@@ -558,10 +692,11 @@
         <p id="visual-date">23. - 24.<br />05.2024.</p>
       </section>
 
-      <section class="sponsors-section">
+      <section class="sponsors-section" id="sponsors">
         <img
           src="./assets/images/Section breaker sponsors1.png"
           class="sponsors-section-breaker"
+          alt="section breaker"
         />
 
         <div class="sponsors-section-heading">
@@ -896,12 +1031,14 @@
         <img
           src="./assets/images/Section breaker4.png"
           class="section-registration-breaker"
+          alt="section breaker"
         />
         <p class="small-text">APLIKACIJA</p>
         <h1 id="registration-headline">REGISTRIRAJ SE</h1>
         <img
           src="./assets/images/days app mockup 2.png"
           id="registration-image"
+          alt="registraion phone image"
         />
         <p class="small-text bottom">[ PRIJAVI SE U APLIKACIJU ]</p>
       </section>
@@ -912,9 +1049,12 @@
             src="./assets/images/53390903052_3df7172b43_o.png"
             alt="gifting prizes"
           />
-          <img src="./assets/images/Rewind.png" />
-          <img src="./assets/images/Vector2.png" />
-          <img src="./assets/images/Section breaker.png" />
+          <img src="./assets/images/Rewind.png" alt="layer" />
+          <img src="./assets/images/Vector2.png" alt="arrow" />
+          <img
+            src="./assets/images/Section breaker.png"
+            alt="section-breaker"
+          />
           <img
             src="./assets/images/53390903052_3df7172b43_o-2.png"
             alt="gifting prizes"
@@ -965,16 +1105,22 @@
           src="./assets/images/Section breaker4.png"
           class="gallery-content-breaker"
           id="black-breaker"
+          alt="section breaker"
         />
         <img
           src="./assets/images/Section breaker.png"
           class="gallery-content-breaker"
           id="beige-breaker"
+          alt="section-breaker"
         />
       </section>
 
       <section class="faq-section">
-        <img src="./assets/images/Section breaker4.png" id="faq-breaker" />
+        <img
+          src="./assets/images/Section breaker4.png"
+          id="faq-breaker"
+          alt="section breaker"
+        />
         <h1>FAQ</h1>
 
         <div class="faq-content">
@@ -1049,10 +1195,10 @@
         </div>
       </section>
 
-      <section class="questions">
+      <section class="questions" id="contact">
         <img
           src="./assets/images/Section breaker tldrQ.png"
-          alt=""
+          alt="section breaker"
           id="tldr-section-breaker"
         />
 
