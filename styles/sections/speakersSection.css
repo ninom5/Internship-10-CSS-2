@@ -18,7 +18,7 @@
       rgba(228, 87, 62, 0.2),
       rgba(228, 87, 62, 0.2)
     ),
-    url("../assets/images/BG texture.png");
+    url("../../assets/images/BG texture.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;

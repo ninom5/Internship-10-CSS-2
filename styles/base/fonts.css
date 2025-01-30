@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "PP Neue Montreal Mono";
+  src: url("../../assets/fonts/ppneuemontreal-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Mono Book";
+  src: url("../../assets/fonts/pp-neue-montreal-mono-book.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Neue Machina";
+  src: url("../../assets/fonts/PPNeueMachina-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}

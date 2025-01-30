@@ -10,7 +10,7 @@
   position: relative;
   background-color: var(--almost-black-color);
   background-image: linear-gradient(rgba(8, 95, 89, 0), rgba(8, 95, 89, 0)),
-    url("../assets/images/BG texture.png");
+    url("../../assets/images/BG texture.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 
 .question-number {
   min-width: 40px;
-  background-image: url("../assets/images/Ellipse\ 96.png");
+  background-image: url("../../assets/images/Ellipse\ 96.png");
   background-repeat: no-repeat;
   background-position: top;
   display: flex;

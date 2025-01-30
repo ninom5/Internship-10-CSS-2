@@ -10,7 +10,7 @@
       rgba(245, 237, 225, 0),
       rgba(245, 237, 225, 0)
     ),
-    url("../assets/images/BG texture.png");
+    url("../../assets/images/BG texture.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@
       rgba(245, 237, 225, 0),
       rgba(245, 237, 225, 0)
     ),
-    url("../assets/images/BG texture.png");
+    url("../../assets/images/BG texture.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;

@@ -3,7 +3,7 @@
   height: 3065px;
   background-color: #085f59;
   background-image: linear-gradient(rgba(8, 95, 89, 0), rgba(8, 95, 89, 0)),
-    url("../assets/images/BG texture.png");
+    url("../../assets/images/BG texture.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
@@ -334,7 +334,7 @@
     height: 2150px;
     top: 0;
     mix-blend-mode: overlay;
-    background-image: url("../assets/images/kampus-most.png");
+    background-image: url("../../assets/images/kampus-most.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
