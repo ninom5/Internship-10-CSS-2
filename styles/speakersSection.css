@@ -60,30 +60,26 @@
   justify-content: space-between;
 }
 
-#img1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-#img2 {
+#matija {
   grid-column: 1;
   grid-row: 7;
   margin-top: 150px;
 }
-#img3 {
+#marin {
   grid-column: 2;
   grid-row: 4;
   margin-top: 150px;
 }
-#img4 {
+#antonio {
   grid-column: 3;
   grid-row: 2;
 }
-#uk {
+#ukn {
   grid-column: 3;
   grid-row: 7;
   margin-top: 400px;
 }
-#img5 {
+#kanye {
   grid-column: 4;
   grid-row: 5;
   margin-top: 100px;
@@ -118,7 +114,7 @@
   animation-timeline: view();
 }
 
-#uk {
+#ukn {
   opacity: 40%;
   animation: fade-in-faded-speaker linear;
   animation-timeline: view();
@@ -140,7 +136,7 @@
 }
 
 @media (min-width: 1200.1px) and (max-width: 1550px) {
-  #uk {
+  #ukn {
     margin-top: 500px;
   }
 }
@@ -168,19 +164,19 @@
     font-size: 0.8rem;
     line-height: 1rem;
   }
-  #img3 {
+  #marin {
     margin-top: -30px;
   }
-  #img5 {
+  #kanye {
     margin-top: -50px;
   }
-  #img2 {
+  #matija {
     margin-top: -100px;
   }
   #all-speakers {
     bottom: 400px;
   }
-  #uk {
+  #ukn {
     margin-top: 200px;
   }
 }
@@ -230,25 +226,25 @@
     text-align: center;
   }
 
-  #img3 {
+  #marin {
     grid-row: 2;
     grid-column: 1;
   }
-  #img4 {
+  #antonio {
     grid-row: 1;
     grid-column: 2;
     margin-top: 150px;
   }
-  #img5 {
+  #kanye {
     grid-row: 3;
     grid-column: 2;
     margin-top: -80px;
   }
-  #img2 {
+  #matija {
     grid-row: 4;
     margin-top: -50px;
   }
-  #uk {
+  #ukn {
     grid-column: 2;
     grid-row: 5;
     margin: 0;
@@ -278,23 +274,23 @@
       font-size: 60px;
       line-height: 90px;
     }
-    #img4 {
+    #antonio {
       grid-row: 2;
       margin-top: -150px;
     }
-    #img3 {
+    #marin {
       grid-row: 3;
       margin-top: -100px;
     }
-    #img5 {
+    #kanye {
       grid-row: 3;
       margin-top: 50px;
     }
-    #img2 {
+    #matija {
       grid-row: 4;
       margin-top: 150px;
     }
-    #uk {
+    #ukn {
       grid-row: 6;
     }
     #all-speakers {
@@ -313,20 +309,20 @@
       font-size: 25px;
       line-height: 30px;
     }
-    #img4 {
+    #antonio {
       margin-top: -100px;
     }
-    #img3 {
+    #marin {
       margin-top: 50px;
     }
-    #img5 {
+    #kanye {
       grid-row: 4;
       margin: 0;
     }
-    #img2 {
+    #matija {
       grid-row: 5;
     }
-    #uk {
+    #ukn {
       grid-row: 7;
       margin-top: 400px;
     }
